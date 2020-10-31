@@ -6,17 +6,17 @@ export default class ThemeContextProvider extends React.Component {
 
     state = {
         isLightTheme: true,
-        light: { color: 'white', },
-        dark: { color: 'black' }
+        light: { color: 'white', ui: 'grey', ux: 'red' },
+        dark: { color: 'black', ui: 'orange', ux: 'blue' }
     }
 
     render() {
         return (
-            <ThemeContext 
+            <ThemeContext.Provider
             value={{...this.state}}
             >
                 {this.props.children}
-            </ThemeContext>
+            </ThemeContext.Provider>
 
         )
     }

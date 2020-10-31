@@ -1,12 +1,13 @@
 
 import './App.css';
 import Container from './components/Container'
+import ThemeContextProvider from './components/contexts/ThemeContext'
 
 function App() {
   return (
-<>
+<ThemeContextProvider>
 <Container/>
-</>
+</ThemeContextProvider>
   );
 }
 
