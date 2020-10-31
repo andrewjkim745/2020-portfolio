@@ -15,7 +15,7 @@ export default class Container extends React.Component {
         const theme = isLightTheme ? light : dark
 
         return (
-        <div class='container' 
+        <div 
         style={{ backgroundColor: theme.color }}
         >
         <Navbar/>
