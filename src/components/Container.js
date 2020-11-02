@@ -16,9 +16,14 @@ export default class Container extends React.Component {
 
         return (
         <div 
-        style={{ backgroundColor: theme.color }}
+        style={{ 
+            backgroundColor: theme.color,
+            backgroundImage: "url('https://i.imgur.com/gSgNzlZ.jpg')",
+            height: '100vh',
+            width: '100vw'
+         }}
         >
-        <Navbar/>
+            <Navbar/>
         </div>
         )
     }

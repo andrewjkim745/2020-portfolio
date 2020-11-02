@@ -1,14 +1,17 @@
 import React from 'react'
+import './Navbar.scss'
 
 
 
 export const Navbar = () => {
     return (
-        <div class='navbar' role="navigation" aria-label="main navigation">
+        <div class='navbar transparent' role="navigation" aria-label="main navigation">
             <div class='navbar-brand'>
                 <div class='navbar-item'>
-                    <p style={{ fontSize: 30 }}>❈</p>
-                    <p>AJK</p>
+                    <p class='has-text-white is-size-1'>❈</p>
+                </div>
+                <div class='navbar-item'>
+                <p class='has-text-white is-size-1'>AJK</p>
                 </div>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
@@ -19,16 +22,16 @@ export const Navbar = () => {
             <div class='navbar-menu'>
             <div class='navbar-end'>
                 <div class="navbar-item">
-                    <a class='button is-primary'>
-                        <strong>About</strong>
+                    <a class='button mx-1'>
+                        About
                     </a>
-                    <a class="button is-light">
+                    <a class="button mx-1">
                         Portfolio
                      </a>
-                    <a class='button is-light'>
+                    <a class='button mx-1'>
                         Resume
                     </a>
-                    <a>
+                    <a class='button mx-1'>
                         Contact
                     </a>
                 </div>
