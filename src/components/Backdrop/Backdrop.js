@@ -12,7 +12,9 @@ export const Backdrop = ({ color }) => {
             backgroundColor: `${color}`,
             backgroundImage: "url('https://i.imgur.com/gSgNzlZ.jpg')",
             height: '100vh',
-            width: '100vw'
+            width: '100vw',
+            position: 'absolute',
+            zIndex: -999
          }}>
         </div>
     )

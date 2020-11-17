@@ -15,16 +15,12 @@ export default class Container extends React.Component {
         const theme = isLightTheme ? light : dark
 
         return (
-        <div 
-        style={{ 
-            backgroundColor: theme.color,
-            backgroundImage: "url('https://i.imgur.com/gSgNzlZ.jpg')",
-            height: '100vh',
-            width: '100vw'
-         }}
-        >
+            <>
+
+            <Backdrop/>
             <Navbar/>
-        </div>
+            
+            </>
         )
     }
     
