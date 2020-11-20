@@ -1,5 +1,6 @@
 import React from 'react' 
-
+import { Column } from './Column'
+import { languageArray }from '../../assets/data'
 
 
 
@@ -7,9 +8,17 @@ import React from 'react'
 
 
 export const ProjectColumns = () => {
+    
     return (
         <div class='columns'>
-            <div class='column'></div>
+            {languageArray.map(language => {
+                return (
+                    <Column>
+                    <img src={language.image}/>
+                    <p class='title'>{language.name}</p>
+                    </Column>
+                )
+            })}
         </div>
     )
 }
