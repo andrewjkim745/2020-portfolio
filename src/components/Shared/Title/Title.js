@@ -15,6 +15,5 @@ export const HeroTitle = ({ title, color, fontFamily }) => {
             </div>
         </section>
         </div>
-
     )
 }
