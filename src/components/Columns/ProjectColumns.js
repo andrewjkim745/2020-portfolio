@@ -3,10 +3,6 @@ import { Column } from './Column'
 import { languageArray }from '../../assets/data'
 
 
-
-
-
-
 export const ProjectColumns = () => {
     
     return (

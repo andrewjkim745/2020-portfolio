@@ -1,6 +1,6 @@
-import { react } from './react.svg'
-import { html } from './html.svg'
-import { js } from './js.svg '
+import  react  from './react.svg'
+import  html  from './html.svg'
+import  js  from './js.svg'
 
 
 
