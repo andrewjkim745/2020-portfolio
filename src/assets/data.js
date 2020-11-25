@@ -12,7 +12,7 @@ import css from './css.svg'
 export const languageArray = [
     {
         image: react,
-        name: 'REACT'
+        name: 'ReactJS'
     },
     {
         image: html,
@@ -20,11 +20,11 @@ export const languageArray = [
     },
     {
         image: js,
-        name: 'JS'
+        name: 'Javascript'
     },
     {
         image: ruby,
-        name: 'RUBY'
+        name: 'Ruby'
     },
     {
         image: sass,
