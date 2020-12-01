@@ -2,6 +2,7 @@ import React from 'react'
 import { Column } from './Column'
 import { languageArray }from '../../assets/data'
 import { HeroTitle } from '../Shared/Title/Title'
+import { CardImage } from '../Shared/CardImage'
 
 
 export const ProjectColumns = () => {
@@ -14,16 +15,14 @@ export const ProjectColumns = () => {
                 return (
                     // <div>
                     <Column columnSize='column is-one-third'>
-                    <div class='card'>
-                        <div class='card-image'>
-                            <figure class='image is-square'>
-                                <img src={language.image}/>
-                            </figure>
-                        </div>
+                        <CardImage
+                        image={language.image}
+                        name={language.name}
+                        />
                         <div class='content is-flex is-justify-content-center'>
                             <p class='title is-size-2'>{language.name}</p>
                         </div>
-                    </div>
+                    {/* </div> */}
                     {/* <img src={language.image}/>
                     <p class='title'>{language.name}</p> */}
                     </Column>
