@@ -12,21 +12,13 @@ export const ProjectColumns = () => {
             <p class='title is-size-1 is-size-4-mobile has-text-centered'>Languages/Frameworks Learned</p>
         <div class='columns is-multiline'>
             {languageArray.map(language => {
-                return (
-                    // <div>
+                return ( 
                     <Column columnSize='column is-one-third'>
                         <CardImage
                         image={language.image}
                         name={language.name}
                         />
-                        <div class='content is-flex is-justify-content-center'>
-                            <p class='title is-size-2'>{language.name}</p>
-                        </div>
-                    {/* </div> */}
-                    {/* <img src={language.image}/>
-                    <p class='title'>{language.name}</p> */}
                     </Column>
-                    // </div>
                 )
             })}
         </div>

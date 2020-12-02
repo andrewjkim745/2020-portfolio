@@ -20,7 +20,7 @@ export default class Container extends React.Component {
             <div style={{position: 'relative', height: '100vh'}}>
                 <Backdrop />
                 <HeroTitle
-                    title='Hi my name is Andrew Kim and I am a FullStack/Web Developer with a strong motivation to learn and improve myself everyday'
+                    title='Full Stack Developer, and'
                     color='white'
                     fontFamily= 'Roboto Slab'
                 />
