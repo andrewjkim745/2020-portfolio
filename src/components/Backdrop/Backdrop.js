@@ -1,4 +1,5 @@
 import React from 'react' 
+import { Navbar } from '../Navbar/Navbar'
 
 
 
@@ -14,9 +15,10 @@ export const Backdrop = ({ color }) => {
             backgroundSize: 'cover',
             height: '100vh',
             width: '100vw',
-            position: 'absolute',
+            position: 'relative',
             zIndex: -999
          }}>
+             <Navbar/>
         </div>
     )
 }

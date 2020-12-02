@@ -1,6 +1,9 @@
-import { react } from './react.svg'
-import { html } from './html.svg'
-import { js } from './js.svg '
+import  react  from './react.svg'
+import  html  from './html.svg'
+import  js  from './js.svg'
+import ruby from './ruby.svg'
+import sass from './sass.svg'
+import css from './css.svg'
 
 
 
@@ -9,7 +12,7 @@ import { js } from './js.svg '
 export const languageArray = [
     {
         image: react,
-        name: 'REACT'
+        name: 'ReactJS'
     },
     {
         image: html,
@@ -17,6 +20,18 @@ export const languageArray = [
     },
     {
         image: js,
-        name: 'JS'
+        name: 'Javascript'
+    },
+    {
+        image: ruby,
+        name: 'Ruby'
+    },
+    {
+        image: sass,
+        name: 'SASS'
+    },
+    {
+        image: css,
+        name: 'CSS'
     }
 ]
