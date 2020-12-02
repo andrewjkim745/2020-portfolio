@@ -1,7 +1,7 @@
 import React from 'react' 
 import { Column } from './Column'
 import { languageArray }from '../../assets/data'
-import { HeroTitle } from '../Shared/Title/Title'
+import { HeroTitle } from '../Shared/Title/HeroTitle'
 import { CardImage } from '../Shared/CardImage'
 
 
