@@ -25,7 +25,17 @@ export const HeroTitle = ({ title, color, fontFamily }) => {
             <div class='hero-body'>
                 <div class='container has-text-centered'>
                     <p class='title has-text-weight-light is-size-2 is-size-1-fullhd is-size-5-mobile' style={{ fontFamily: `${fontFamily}`, color: `${color}` }} >{title}</p>
-                    <TextLoop>
+                    <TextLoop
+                    mask='true'
+                    interval='1500'
+                    children={
+                        [
+                            'an avid basketball fan',
+                            'a nationally ranked fencer',
+                            'a movie/video game lover'
+                        ]
+                    }
+                    >
                         {textArray.map(words => {
                             return (
                                 <p>{words.text}</p>
