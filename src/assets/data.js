@@ -4,6 +4,8 @@ import  js  from './js.svg'
 import ruby from './ruby.svg'
 import sass from './sass.svg'
 import css from './css.svg'
+import rails from './rails.svg'
+import python from './python.svg'
 
 
 
@@ -33,5 +35,13 @@ export const languageArray = [
     {
         image: css,
         name: 'CSS'
+    },
+    {
+        image: rails,
+        name: 'Rails'
+    },
+    {
+        image: python,
+        name: 'Python'
     }
 ]

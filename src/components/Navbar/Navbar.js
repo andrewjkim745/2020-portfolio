@@ -8,10 +8,10 @@ export const Navbar = () => {
         <div class='navbar transparent' role="navigation" aria-label="main navigation">
             <div class='navbar-brand'>
                 <div class='navbar-item'>
-                    <p class='has-text-white is-size-1'>❈</p>
+                    <p class='has-text-white is-size-1 is-size-4-mobile'>❈</p>
                 </div>
                 <div class='navbar-item'>
-                <p class='has-text-white is-size-1'>AJK</p>
+                <p class='has-text-white is-size-1 is-size-4-mobile'>AJK</p>
                 </div>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
