@@ -25,7 +25,7 @@ export default class Container extends React.Component {
                     color='white'
                     fontFamily= 'Roboto Slab'
                 />
-                <About/>
+                <About/> 
                 <ProjectColumns/>
             </div>
         )

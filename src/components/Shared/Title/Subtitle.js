@@ -4,7 +4,7 @@ import React from 'react'
 
 export const Subtitle = ({ subtitle }) => {
     return (
-        <h2 class='subtitle is-size-4-desktop is-size-5-mobile'>
+        <h2 class='subtitle is-size-4-desktop is-size-5-mobile has-text-light'>
             {subtitle}
         </h2>
     )
