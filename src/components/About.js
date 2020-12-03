@@ -3,6 +3,7 @@ import { Column } from './Columns/Column'
 import { Title } from './Shared/Title/Title'
 import { Subtitle } from './Shared/Title/Subtitle'
 import Avatar from '../assets/andrew.svg'
+import aReality from '../assets/aReality.svg'
 
 
 
