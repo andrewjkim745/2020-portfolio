@@ -3,7 +3,7 @@ import { ThemeContext } from './contexts/ThemeContext'
 import { Navbar } from './Navbar/Navbar'
 import { Backdrop } from './Backdrop/Backdrop'
 import { HeroTitle } from './Shared/Title/HeroTitle'
-import { ProjectColumns } from './Columns/ProjectColumns'
+import { ProjectColumns } from './Columns/LanguageColumns'
 import { About } from './About'
 
 

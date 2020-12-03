@@ -8,9 +8,9 @@ import { CardImage } from '../Shared/CardImage'
 export const ProjectColumns = () => {
     
     return (
-        <div style={{ backgroundColor:'lightgoldenrodyellow' }}class='is-flex-direction-column is-justify-content-center p-5'>
-            <p class='title is-size-1 is-size-4-mobile has-text-centered'>Languages/Frameworks Learned</p>
-        <div class='columns is-multiline'>
+        <div style={{ backgroundColor:'lightgoldenrodyellow' }} class='is-flex-direction-column is-justify-content-center p10'>
+            <p class='title is-size-2 is-size-6-mobile has-text-centered'>Languages/Frameworks Learned</p>
+        <div class='columns is-multiline my-6'>
             {languageArray.map(language => {
                 return ( 
                     <Column columnSize='column is-one-quarter'>
