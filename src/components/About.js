@@ -8,7 +8,7 @@ import Avatar from '../assets/andrew.svg'
 
 export const About = () => {
     return (
-        <section class='is-large is-primary has-text-centered is-long has-background-danger p-4'>
+        <section class='is-large is-primary has-text-centered is-long has-background-danger p-5'>
             <div class='container'>
                 <div class='columns is-centered'>
                     
