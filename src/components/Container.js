@@ -5,6 +5,7 @@ import { Backdrop } from './Backdrop/Backdrop'
 import { HeroTitle } from './Shared/Title/HeroTitle'
 import { ProjectColumns } from './Columns/LanguageColumns'
 import { About } from './About'
+import { DogMove } from './DogMove'
 
 
 
@@ -27,6 +28,7 @@ export default class Container extends React.Component {
                 />
                 <About/> 
                 <ProjectColumns/>
+                <DogMove/>
             </div>
         )
     }

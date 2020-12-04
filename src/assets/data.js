@@ -14,7 +14,7 @@ import python from './python.svg'
 export const languageArray = [
     {
         image: react,
-        name: 'ReactJS'
+        name: 'React'
     },
     {
         image: html,
@@ -22,7 +22,7 @@ export const languageArray = [
     },
     {
         image: js,
-        name: 'Javascript'
+        name: 'Jscript'
     },
     {
         image: ruby,
