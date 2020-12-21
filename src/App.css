@@ -3,6 +3,37 @@
     padding: 3rem
 }
 
+.dog {
+    transform: rotateY(180deg);
+    animation: dogRun 5s infinite;
+    /* animation-duration: 5s; */
+}
+
+.w100 {
+    width: 100%;
+    position: relative;
+}
+
+.w90 {
+    width: 90%;
+}
+
+.w10 {
+    width: 10%;
+}
+
+@keyframes dogRun {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: calc(100% - 60px); 
+    }
+}
+
 
 
 
@@ -10,6 +41,4 @@
     .p10 {
         padding: 6rem
     }
-
-
 }
