@@ -24,6 +24,7 @@ export const HeroTitle = ({ title, color, fontFamily }) => {
                         <p class='subtitle has-text-weight-light is-size-2 is-size-1-fullhd is-size-5-mobile has-text-danger'>an avid basketball fan</p>
                         <p class='subtitle has-text-weight-light is-size-2 is-size-1-fullhd is-size-5-mobile has-text-danger'>a nationally ranked fencer</p>
                         <p class='subtitle has-text-weight-light is-size-2 is-size-1-fullhd is-size-5-mobile has-text-danger'>a movie/video game lover</p>
+                        <p class='subtitle has-text-weight-light is-size-2 is-size-1-fullhd is-size-5-mobile has-text-danger'>a proud dog owner</p>
                     </TextLoop>
                 </div>
             </div>
