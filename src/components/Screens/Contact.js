@@ -44,7 +44,9 @@ export default class Contact extends React.Component {
                 </div>
                 <div class='columns is-centered'>
                     <div class='column is-one-third'>
-                        <Button color='secondary' variant='contained' />
+                        <Button color='secondary' variant='contained'>
+                            Submit
+                        </Button>
                     </div>
                 </div>
             </div>
