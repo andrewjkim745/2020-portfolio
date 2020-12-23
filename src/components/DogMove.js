@@ -18,9 +18,9 @@ export default function DogMove() {
 
 
 
-    useEffect = () => {
-        window.addEventListener('scroll', handleScroll())
-    },[]}
+    // useEffect = () => {
+    //     window.addEventListener('scroll', handleScroll())
+    // },[]}
 
     // handleScroll = (e) => {
     //     if (window.pageYoffset)
