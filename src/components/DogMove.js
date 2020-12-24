@@ -32,7 +32,6 @@ export default function DogMove() {
         }, 5000)
     }
     renderDogEating = () => {
-        
         <div>
             <img src={Eating}/>
         </div>

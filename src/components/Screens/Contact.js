@@ -15,10 +15,17 @@ export default class Contact extends React.Component {
 
 
         this.state = {
-            name: '',
-            email: '',
-            message: ''
+            Name: '',
+            Email: '',
+            Message: ''
         }
+    }
+
+
+    handleChange = (e) => {
+        this.setState({
+            [e.target.name]: e.target.value
+        })
     }
 
 
@@ -49,7 +56,7 @@ export default class Contact extends React.Component {
                         <div class='field'>
                             <label class='label'>Message</label>
                             <div class="control">
-                                <textarea class="textarea" placeholder="Please write your message here"></textarea>
+                                <textarea name='Message' class="textarea" placeholder="Please write your message here"></textarea>
                             </div>
                         </div>
                     </div>
