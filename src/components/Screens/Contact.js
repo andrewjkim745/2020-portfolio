@@ -28,9 +28,15 @@ export default class Contact extends React.Component {
         })
     }
 
+    handleSubmit = () => {
+        // send email with data
+    }
+
 
 
     render() {
+
+        
         return (
             <div class='container'>
                 <DogMove/>
@@ -45,10 +51,10 @@ export default class Contact extends React.Component {
                 </div>
                 <div class='columns is-centered'>
                     <div class='column is-half'>
-                        <TextField label='Name' id='standard-basic' />
+                        <TextField onChange={this.handleChange} label='Name' id='standard-basic' />
                     </div>
                     <div class='column is-half'>
-                        <TextField label='Email' id='standard-basic' />
+                        <TextField onChange={this.handleChange} label='Email' id='standard-basic' />
                     </div>
                 </div>
                 <div class='columns is-centered'>
@@ -56,14 +62,14 @@ export default class Contact extends React.Component {
                         <div class='field'>
                             <label class='label'>Message</label>
                             <div class="control">
-                                <textarea name='Message' class="textarea" placeholder="Please write your message here"></textarea>
+                                <textarea onChange={this.handleChange} name='Message' class="textarea" placeholder="Please write your message here"></textarea>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class='columns is-centered'>
                     <div class='column is-one-third'>
-                        <Button color='secondary' variant='contained'>
+                        <Button onSubmit={this.handleSubmit} color='secondary' variant='contained'>
                             Submit
                         </Button>
                     </div>
