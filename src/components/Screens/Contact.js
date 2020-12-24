@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, TextField } from '@material-ui/core'
+import { Title } from '../Shared/Title'
 
 
 
@@ -24,6 +25,13 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div class='container'>
+                <div class='container has-text-centered'>
+                    <div class='columns'>
+                        <div class='column is-three-quarters'>
+
+                        </div>
+                    </div>
+                </div>
                 <div class='columns is-centered'>
                     <div class='column is-half'>
                         <TextField label='Name' id='standard-basic' />
