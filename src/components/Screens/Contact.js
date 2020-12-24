@@ -28,7 +28,9 @@ export default class Contact extends React.Component {
                 <div class='container has-text-centered'>
                     <div class='columns'>
                         <div class='column is-three-quarters'>
-
+                            <h1 class='is-spaced is-size-2-tablet is-size-3-mobile is-size-1-desktop'>
+                                Thanks for taking the time to reach out! How can I help you?
+                            </h1>
                         </div>
                     </div>
                 </div>
