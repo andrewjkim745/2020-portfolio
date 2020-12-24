@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button, TextField } from '@material-ui/core'
 import { Title } from '../Shared/Title'
+import { DogMove } from '../DogMove'
 
 
 
@@ -25,6 +26,7 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div class='container'>
+                <DogMove/>
                 <div class='container has-text-centered'>
                     <div class='columns'>
                         <div class='column is-three-quarters'>
