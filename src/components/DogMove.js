@@ -1,4 +1,4 @@
-import React from 'react' 
+import React, { useState } from 'react' 
 import Dog from '../assets/dogGif.gif'
 import Bone from '../assets/dogBone.png'
 import Eating from '../assets/dogEating.gif'
@@ -7,22 +7,38 @@ import Eating from '../assets/dogEating.gif'
 
 
 
-export const DogMove = () => {
+export default function DogMove() {
 
 
 
 
+
+    const [eating, setEating ] = useState(false)
+
+
+
+
+    // useEffect = () => {
+    //     window.addEventListener('scroll', handleScroll())
+    // },[]}
+
+    // handleScroll = (e) => {
+    //     if (window.pageYoffset)
+    // }
     timeout = () => {
         setTimeout(() => {
+            setEating(true)
 // render dog eating and change classNames of other images to display none
         }, 5000)
     }
     renderDogEating = () => {
-        
         <div>
             <img src={Eating}/>
         </div>
     }
+
+
+
 
 
     return (
