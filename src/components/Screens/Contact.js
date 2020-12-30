@@ -67,7 +67,7 @@ export default class Contact extends React.Component {
                 <div class='columns is-centered'>
                     <div class='column'>
                         <div class='field'>
-                            <label class='label'>Message</label>
+                            {/* <label class='label'>Message</label> */}
                             <div class="control">
                                 <textarea onChange={this.handleChange} name='Message' class="textarea" placeholder="Please write your message here"></textarea>
                             </div>
@@ -76,9 +76,11 @@ export default class Contact extends React.Component {
                 </div>
                 <div class='columns is-centered'>
                     <div class='column is-one-third'>
+                        <div class='is-flex is-justify-content-center'>
                         <Button onSubmit={this.handleSubmit} color='secondary' variant='contained'>
                             Submit
                         </Button>
+                        </div>
                     </div>
                 </div>
                 </div>
