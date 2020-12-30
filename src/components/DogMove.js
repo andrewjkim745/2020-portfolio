@@ -25,13 +25,13 @@ export default function DogMove() {
     // handleScroll = (e) => {
     //     if (window.pageYoffset)
     // }
-    timeout = () => {
+    function timeout() {
         setTimeout(() => {
             setEating(true)
 // render dog eating and change classNames of other images to display none
         }, 5000)
     }
-    renderDogEating = () => {
+    function renderDogEating() {
         <div>
             <img src={Eating}/>
         </div>

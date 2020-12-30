@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button, TextField } from '@material-ui/core'
-import { Title } from '../Shared/Title'
-import { DogMove } from '../DogMove'
+// import { Title } from '../Shared/Title'
+import  DogMove  from '../DogMove'
 
 
 
@@ -40,19 +40,26 @@ export default class Contact extends React.Component {
         return (
             <div class='container'>
                 <DogMove/>
-                <div class='container has-text-centered'>
-                    <div class='columns'>
+                <section class='has-text-centered'>
+                    {/* <div class='container'> */}
+                    <div class='columns is-centered'>
                         <div class='column is-three-quarters'>
                             <h1 class='is-spaced is-size-2-tablet is-size-3-mobile is-size-1-desktop'>
                                 Thanks for taking the time to reach out! How can I help you?
                             </h1>
                         </div>
                     </div>
-                </div>
+                    {/* </div> */}
+                </section>
+                <section>
+                <div class='container'>
                 <div class='columns is-centered'>
                     <div class='column is-half'>
+                        <div>
                         <TextField onChange={this.handleChange} label='Name' id='standard-basic' />
+                        </div>
                     </div>
+                    
                     <div class='column is-half'>
                         <TextField onChange={this.handleChange} label='Email' id='standard-basic' />
                     </div>
@@ -74,6 +81,8 @@ export default class Contact extends React.Component {
                         </Button>
                     </div>
                 </div>
+                </div>
+                </section>
             </div>
         )
     }
