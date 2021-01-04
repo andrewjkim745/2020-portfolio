@@ -38,10 +38,9 @@ export default class Contact extends React.Component {
 
         
         return (
-            <div class='container'>
+            <div class='container p-5'>
                 <DogMove/>
                 <section class='has-text-centered'>
-                    {/* <div class='container'> */}
                     <div class='columns is-centered'>
                         <div class='column is-three-quarters'>
                             <h1 class='is-spaced is-size-2-tablet is-size-3-mobile is-size-1-desktop'>
@@ -49,7 +48,6 @@ export default class Contact extends React.Component {
                             </h1>
                         </div>
                     </div>
-                    {/* </div> */}
                 </section>
                 <section>
                 <div class='container'>

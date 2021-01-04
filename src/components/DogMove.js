@@ -25,12 +25,12 @@ export default function DogMove() {
     // handleScroll = (e) => {
     //     if (window.pageYoffset)
     // }
-    function timeout() {
+    const timeout = () => {
         setTimeout(() => {
             setEating(true)
-            // render dog eating and change classNames of other images to display none
-        }, 5000)
+        }, 4500)
     }
+
     const renderDog = () => {
         return (
             <section>
@@ -49,8 +49,8 @@ export default function DogMove() {
     const renderDogEating = () => {
         return (
             <section>
-                <div>
-                    <img src={Eating} />
+                <div class='is-flex is-justify-content-flex-end'>
+                    <img src={Eating} style={{width: 60, height: 60}}/>
                 </div>
             </section>
 
@@ -60,7 +60,7 @@ export default function DogMove() {
     const renderDogAnimation = () => {
         return (
             <>
-                {eating ? renderDog() : renderDogEating()}}
+                {eating ? renderDogEating() : renderDog()}
             </>
         )
 
@@ -75,7 +75,10 @@ export default function DogMove() {
         // setTimeout(() => {
         //     // render inital dog and bone and then set class of both images to display none and render image of dog eating
         // }, 5000)
-        <section>
+        <>
+        {timeout()}
+        {renderDogAnimation()}
+        {/* <section>
             <div class='w100 is-flex is-justify-content-space-between'>
                 <div class='w90 is-flex is-justify-content-flex-start'>
                     <img class='dog' style={{ width: 60, height: 60, position: 'absolute' }} src={Dog} />
@@ -84,6 +87,7 @@ export default function DogMove() {
                     <img style={{ width: 60, height: 60 }} src={Bone} />
                 </div>
             </div>
-        </section>
+        </section> */}
+        </>
     )
 }
