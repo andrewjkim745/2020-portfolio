@@ -16,6 +16,5 @@ export const Routes = () => {
         <Route exact path='/contact'
         component={Contact}/>
         </>
-        
     )
 }
