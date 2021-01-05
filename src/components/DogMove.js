@@ -50,7 +50,7 @@ export default function DogMove() {
         return (
             <section>
                 <div class='is-flex is-justify-content-flex-end'>
-                    <img src={Eating} style={{width: 60, height: 60}}/>
+                    <img src={Eating} style={{width: 100, height: 60}}/>
                 </div>
             </section>
 
@@ -65,11 +65,6 @@ export default function DogMove() {
         )
 
     }
-
-
-
-
-
 
     return (
         // setTimeout(() => {

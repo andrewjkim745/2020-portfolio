@@ -5,6 +5,7 @@ import './Navbar.scss'
 
 export default function Navbar () {
     const [ hovered, setHovered ] = useState(false)
+    const [ modal, setModal ] = useState(false)
     
     function toggleHover() {
         setHovered(true)
