@@ -1,5 +1,5 @@
 import React from 'react' 
-import { Navbar } from '../Navbar/Navbar'
+import  Navbar  from '../Navbar/Navbar'
 
 
 
@@ -18,7 +18,7 @@ export const Backdrop = ({ color }) => {
             position: 'relative',
             zIndex: -999
          }}>
-             <Navbar/>
+             {/* <Navbar/> */}
         </div>
     )
 }

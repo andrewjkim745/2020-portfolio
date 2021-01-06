@@ -22,13 +22,16 @@
     width: 10%;
 }
 
+.rotateLogo {
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
 @keyframes dogRun {
     0% {
         left: 0;
     }
-    50% {
-        left: 50%;
-    }
+
     100% {
         left: calc(100% - 60px); 
     }
