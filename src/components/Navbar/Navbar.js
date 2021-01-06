@@ -18,6 +18,7 @@ export default function Navbar () {
             <>
             <Modal
             className={modal ? 'modal is-active' : 'modal'}
+            onClick={() => setModal(false)}
             />
             </>  
         )
@@ -34,11 +35,12 @@ export default function Navbar () {
                 <div  class='navbar-item'>
                 <p onMouseEnter={toggleHover} class={hovered ? 'has-text-white is-size-1 is-size-4-mobile rotateLogo' : 'has-text-black is-size-1 is-size-4-mobile'}>AJK</p>
                 </div>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <a onClick={() => setModal(true)} role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
+                {renderModal()}
             </div>
             <div class='navbar-menu'>
             <div class='navbar-end'>
