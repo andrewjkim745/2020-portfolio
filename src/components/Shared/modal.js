@@ -4,9 +4,9 @@ import { Title } from '../Shared/Title/Title'
 
 
 
-export const Modal = () => {
+export const Modal = ({ className}) => {
     <>
-    <div class='modal'>
+    <div class={className}>
         <div class='modal-background'>
             <div class='modal-content'>
                 <div class='container is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
