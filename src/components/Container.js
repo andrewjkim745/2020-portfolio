@@ -1,6 +1,6 @@
 import React from 'react'
 import { ThemeContext } from './contexts/ThemeContext'
-import { Navbar } from './Navbar/Navbar'
+import  Navbar  from './Navbar/Navbar'
 import { Backdrop } from './Backdrop/Backdrop'
 import { HeroTitle } from './Shared/Title/HeroTitle'
 import { ProjectColumns } from './Columns/LanguageColumns'
@@ -19,7 +19,9 @@ export default class Container extends React.Component {
         const theme = isLightTheme ? light : dark
 
         return (
-            <div style={{position: 'relative', height: '100vh'}}>
+            // <div style={{position: 'relative', height: '100vh'}}>
+            <>
+            <Navbar/>
                 <Backdrop />
                 <HeroTitle
                     title='Full Stack Developer, and'
@@ -29,7 +31,8 @@ export default class Container extends React.Component {
                 <About/> 
                 <ProjectColumns/>
                 <Contact/>
-            </div>
+                </>
+            // {/* // </div> */}
         )
     }
 }

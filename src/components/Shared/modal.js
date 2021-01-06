@@ -4,7 +4,8 @@ import { Title } from '../Shared/Title/Title'
 
 
 
-export const Modal = ({ className}) => {
+export const Modal = ({ className }) => {
+    return (
     <>
     <div class={className}>
         <div class='modal-background'>
@@ -25,6 +26,8 @@ export const Modal = ({ className}) => {
                 </div>
             </div>
         </div>
+        <button class="modal-close is-large" aria-label="close"></button>
     </div>
     </>
+    )
 }
