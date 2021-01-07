@@ -30,7 +30,7 @@ export default class Container extends React.Component {
                 />
                 <About/> 
                 <ProjectColumns/>
-                <Contact/>
+                {/* <Contact/> */}
                 </>
             // {/* // </div> */}
         )

@@ -12,6 +12,9 @@ export default function Navbar () {
 
     function toggleHover() {
         setHovered(true)
+        setTimeout(() => {
+            setHovered(false)
+        }, 500)
     }
 
     const renderModal = () => {
@@ -30,11 +33,13 @@ export default function Navbar () {
     return (
         <div class='navbar' role="navigation" aria-label="main navigation">
             <div class='navbar-brand'>
-                <div class='navbar-item'>
+                <NavLink exact to='/'>
+                <div onClick={toggleHover} class={hovered ? 'navbar-item rotateLogo' : 'navbar-item'}>
                     <p class='has-text-black is-size-1 is-size-4-mobile'>❈</p>
                 </div>
+                </NavLink>
                 <div  class='navbar-item'>
-                <p onMouseEnter={toggleHover} class={hovered ? 'has-text-white is-size-1 is-size-4-mobile rotateLogo' : 'has-text-black is-size-1 is-size-4-mobile'}>AJK</p>
+                <p onMouseEnter={toggleHover} class={hovered ? 'has-text-black is-size-1 is-size-4-mobile rotateLogo' : 'has-text-black is-size-1 is-size-4-mobile'}>AJK</p>
                 </div>
                 <a onClick={() => setModal(true)} role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>

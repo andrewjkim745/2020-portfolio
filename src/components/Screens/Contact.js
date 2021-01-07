@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, TextField } from '@material-ui/core'
 // import { Title } from '../Shared/Title'
 import  DogMove  from '../DogMove'
+import  NavBar  from '../Navbar/Navbar'
 
 
 
@@ -38,6 +39,8 @@ export default class Contact extends React.Component {
 
         
         return (
+            <>
+            <NavBar/>
             <div class='container p-5'>
                 <DogMove/>
                 <section class='has-text-centered'>
@@ -84,6 +87,7 @@ export default class Contact extends React.Component {
                 </div>
                 </section>
             </div>
+            </>
         )
     }
 }
