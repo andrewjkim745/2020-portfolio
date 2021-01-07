@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.scss'
 import { Modal } from '../Shared/modal'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -54,9 +55,9 @@ export default function Navbar () {
                     <a class='button mx-1'>
                         Resume
                     </a>
-                    <a class='button mx-1'>
+                    <NavLink exact to='/contact' class='button mx-1'>
                         Contact
-                    </a>
+                    </NavLink>
                 </div>
             </div>
             </div>
