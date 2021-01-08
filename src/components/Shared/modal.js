@@ -10,7 +10,7 @@ export const Modal = ({ className, onClick }) => {
     <div class={className}>
         <div class='modal-background'>
             {/* <div class='modal-content'> */}
-                <div class='has-background-white-bis p-6 container is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
+                <div class='has-background-white-bis p-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
                     <Title
                     title='About'
                     color='dark'
