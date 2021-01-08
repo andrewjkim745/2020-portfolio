@@ -10,18 +10,22 @@ export const Modal = ({ className, onClick }) => {
     <div class={className}>
         <div class='modal-background'>
             {/* <div class='modal-content'> */}
-                <div class=' p-6 container is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
+                <div class='has-background-white-bis p-6 container is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
                     <Title
                     title='About'
+                    color='dark'
                     />
                     <Title
                     title='Portfolio'
+                    color='dark'
                     />
                     <Title
                     title='Resume'
+                    color='dark'
                     />
                     <Title
                     title='Contact'
+                    color='dark'
                     />
                 </div>
             {/* </div> */}
