@@ -1,5 +1,6 @@
 import React from 'react'
 import { Title } from '../Shared/Title/Title'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -10,7 +11,8 @@ export const Modal = ({ className, onClick }) => {
     <div class={className}>
         <div class='modal-background'>
             {/* <div class='modal-content'> */}
-                <div class='has-background-white-bis p-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
+                <div class='is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
+                    <div class='has-background-white is-align-self-flex-end is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
                     <Title
                     title='About'
                     color='dark'
@@ -27,6 +29,7 @@ export const Modal = ({ className, onClick }) => {
                     title='Contact'
                     color='dark'
                     />
+                    </div>
                 </div>
             {/* </div> */}
         </div>
