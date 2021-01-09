@@ -12,7 +12,7 @@ export const Modal = ({ className, onClick }) => {
         <div class='modal-background'>
             {/* <div class='modal-content'> */}
                 <div class='is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
-                    <div class='has-background-white is-align-self-flex-end is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
+                    <div class='sideDrawer has-background-white is-align-self-flex-end is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
                     <Title
                     title='About'
                     color='dark'
