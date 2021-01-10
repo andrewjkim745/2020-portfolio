@@ -5,14 +5,14 @@ import { NavLink } from 'react-router-dom'
 
 
 
-export const Modal = ({ className, onClick }) => {
+export const Modal = ({ className, onClick, sideDrawerClass }) => {
     return (
     <>
     <div class={className}>
-        <div class='modal-background'>
+        <div onClick={onClick} class='modal-background'>
             {/* <div class='modal-content'> */}
                 <div class='is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
-                    <div class='sideDrawer has-background-white is-align-self-flex-end is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
+                    <div class={sideDrawerClass}>
                     <Title
                     title='About'
                     color='dark'
