@@ -35,26 +35,48 @@ body{
     transition: all 0.3s ease-in-out 0s;
 }
 
-.sideDrawer {
+/* .sideDrawer {
     width: 50%;
     height:100vh; 
-    /* animation-name: openModal;
+    animation-name: openModal;
     animation-duration: .2s;
-    animation-fill-mode: forwards; */
-    transform: translateX(500px);
-    transition: transform .5s ease-out;
-    
+    animation-fill-mode: forwards;
+    transform: translateX(100%);
+    transition: transform 1s ease-in;
+} */
+.side-drawer { 
+    height: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    z-index: 200;
+    box-shadow: 1px 0px 7px rgba(0,0,0,0.5); 
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+ }
+ .side-drawer.open {
+    transform: translateX(0);
+ }
 
-}
-
-.open {
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 100;
+    top: 0;
+    right: 0;
+  }
+/* .open {
     transform: translateX(0px);
-    /* width: 0%;
+    width: 0%;
     animation-name: closeModal;
     animation-duration: .5s;
     animation-fill-mode: forwards;
-    transition: 1s ease-in; */
-}
+    transition: 1s ease-in;
+} */
 @keyframes dogRun {
     0% {
         left: 0;

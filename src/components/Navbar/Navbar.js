@@ -22,8 +22,8 @@ export default function Navbar () {
             <>
             <Modal
             className={modal ? 'modal is-active' : 'modal'}
-            sideDrawerClass={modal ? 'sideDrawer open has-background-white is-align-self-flex-end is-flex is-flex-direction-column is-justify-content-center is-align-items-center': 'sideDrawer has-background-white is-align-self-flex-end is-flex is-flex-direction-column is-justify-content-center is-align-items-center'}
-            // sideDrawerClass={modal ? 'sideDrawer open has-background-white' : 'sideDrawer has-background-white'}
+            // sideDrawerClass={modal ? 'sideDrawer open ': 'sideDrawer has-background-white '}
+            sideDrawerClass={modal ? 'sideDrawer open has-background-white' : 'sideDrawer has-background-white'}
             onClick={() => setModal(false)}
             />
             </>  

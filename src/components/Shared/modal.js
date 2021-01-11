@@ -31,10 +31,10 @@ export const Modal = ({ className, onClick, sideDrawerClass }) => {
                     />
                     </div>
                 </div>
-            {/* </div> */}
+            </div>
         </div>
         <button onClick={onClick} class="modal-close is-large" aria-label="close"></button>
-    </div>
+    {/* </div> */}
     </>
     )
 }
