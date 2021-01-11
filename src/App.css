@@ -41,14 +41,14 @@ body{
     /* animation-name: openModal;
     animation-duration: .2s;
     animation-fill-mode: forwards; */
-    transform: translateX(100%);
+    transform: translateX(500px);
     transition: transform .5s ease-out;
     
 
 }
 
 .open {
-    transform: translateX(0);
+    transform: translateX(0px);
     /* width: 0%;
     animation-name: closeModal;
     animation-duration: .5s;
