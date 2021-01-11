@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import './Navbar.scss'
 import { Modal } from '../Shared/modal'
 import { NavLink } from 'react-router-dom'
-
+import SideDrawer from '../SideDrawer/SideDrawer'
+import SideBackdrop  from '../SideDrawer/SideBackdrop'
 
 
 export default function Navbar () {
@@ -29,10 +30,17 @@ export default function Navbar () {
             </>  
         )
     }
-
+    const backdrop = () => {
+        if (modal) {
+            return (
+                <SideBackdrop close={()=>setModal(false)}/>
+            )
+        }
+    }
 
 
     return (
+
         <div class='navbar' role="navigation" aria-label="main navigation">
             <div class='navbar-brand'>
                 <NavLink exact to='/'>
@@ -48,7 +56,9 @@ export default function Navbar () {
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
-                {renderModal()}
+                {/* {renderModal()} */}
+                <SideDrawer modal={modal}/>
+                {backdrop()}
             </div>
             <div class='navbar-menu'>
             <div class='navbar-end'>

@@ -3,11 +3,11 @@ import React from 'react'
 
 
 
-export default function SlideDrawer() {
+export default function SlideDrawer(props) {
 
 
        let drawerClasses = 'side-drawer'
-       if (props.show) {
+       if (props.modal) {
           drawerClasses = 'side-drawer open'
        }
        return(
