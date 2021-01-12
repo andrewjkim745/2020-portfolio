@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
-import AccountCircleIcon from '@material-ui/icons/AccountCircle';
-import LaptopChromebookIcon from '@material-ui/icons/LaptopChromebook';
-import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
-import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
+import { useHistory } from "react-router-dom";
 import { sdData } from '../../assets/sdData'
+import Icon from '@material-ui/core/Icon'
 
 export default function SlideDrawer(props) {
 
@@ -15,15 +13,25 @@ export default function SlideDrawer(props) {
 
        const [ hovered, setHovered ] = useState(false)
 
+       const history = useHistory();
+
+       const routeChange = () =>{ 
+         let path = `newPath`; 
+         history.push(path);
+       }
 
        const sideDrawerContent = () => {
           return (
              <>
              {sdData.map(item => {
+                return (
+
+                
                 <div class='fullW is-flex is-justify-content-space-evenly is-align-items-center'>
-                   {item.image}
+                   <Icon>{item.image}</Icon>
                    <p class='is-size-4'>{item.name}</p>
                 </div>
+                )
              })}
              </>
           )

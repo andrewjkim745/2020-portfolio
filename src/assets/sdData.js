@@ -5,22 +5,21 @@ import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 
 
-
 export const sdData = [
 {
-    image: AccountCircleIcon,
+    image: 'account_circle',
     name: 'About'
 },
 {
-    image: LaptopChromebookIcon,
+    image: 'perm_media',
     name: 'Portfolio'
 },
 {
-    image: AssignmentIndIcon,
+    image: 'fact_check',
     name: 'Resume'
 },
 {
-    image: ContactPhoneIcon,
+    image: 'contactless',
     name: 'Contact'
 }
 ]
