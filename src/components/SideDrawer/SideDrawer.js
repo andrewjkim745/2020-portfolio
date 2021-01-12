@@ -3,6 +3,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import LaptopChromebookIcon from '@material-ui/icons/LaptopChromebook';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
+import { sdData } from '../../assets/sdData'
 
 export default function SlideDrawer(props) {
 
@@ -15,9 +16,23 @@ export default function SlideDrawer(props) {
        const [ hovered, setHovered ] = useState(false)
 
 
+       const sideDrawerContent = () => {
+          return (
+             <>
+             {sdData.map(item => {
+                <div class='fullW is-flex is-justify-content-space-evenly is-align-items-center'>
+                   {item.image}
+                   <p class='is-size-4'>{item.name}</p>
+                </div>
+             })}
+             </>
+          )
+       }
+
        return(
           <div className={drawerClasses}>
-               <div class='fullW is-flex is-justify-content-space-evenly is-align-items-center'>
+             {sideDrawerContent()}
+               {/* <div class='fullW is-flex is-justify-content-space-evenly is-align-items-center'>
                   <AccountCircleIcon
                   fontSize='large'
                   />
@@ -40,7 +55,7 @@ export default function SlideDrawer(props) {
                   fontSize='large'
                   />
                   <p class='is-size-4'>Contact</p>
-               </div>  
+               </div>   */}
           </div>
       )   
 }
