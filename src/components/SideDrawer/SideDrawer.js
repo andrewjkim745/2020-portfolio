@@ -15,8 +15,8 @@ export default function SlideDrawer(props) {
 
        const history = useHistory();
 
-       const routeChange = () =>{ 
-         let path = `newPath`; 
+       const routeChange = (item) =>{ 
+         let path = item.path; 
          history.push(path);
        }
 

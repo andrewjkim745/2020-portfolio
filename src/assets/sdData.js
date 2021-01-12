@@ -8,18 +8,22 @@ import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 export const sdData = [
 {
     image: 'account_circle',
-    name: 'About'
+    name: 'About',
+    path: '/'
 },
 {
     image: 'perm_media',
-    name: 'Portfolio'
+    name: 'Portfolio',
+    path: '/'
 },
 {
     image: 'fact_check',
-    name: 'Resume'
+    name: 'Resume',
+    path: '/'
 },
 {
     image: 'contactless',
     name: 'Contact'
+    path: '/contact'
 }
 ]
