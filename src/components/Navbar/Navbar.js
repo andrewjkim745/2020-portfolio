@@ -18,18 +18,7 @@ export default function Navbar () {
         }, 500)
     }
 
-    const renderModal = () => {
-        return (
-            <>
-            <Modal
-            className={modal ? 'modal is-active' : 'modal'}
-            // sideDrawerClass={modal ? 'sideDrawer open ': 'sideDrawer has-background-white '}
-            sideDrawerClass={modal ? 'sideDrawer open has-background-white' : 'sideDrawer has-background-white'}
-            onClick={() => setModal(false)}
-            />
-            </>  
-        )
-    }
+
     const backdrop = () => {
         if (modal) {
             return (

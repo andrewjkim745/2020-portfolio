@@ -69,6 +69,12 @@ body{
     top: 0;
     right: 0;
   }
+
+  .fullW {
+      width: 100%;
+      border-bottom: 2px solid lightslategrey;
+      padding: 10px;
+  }
 /* .open {
     transform: translateX(0px);
     width: 0%;
