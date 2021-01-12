@@ -27,7 +27,7 @@ export default function SlideDrawer(props) {
                 return (
 
                 
-                <div class='fullW is-flex is-justify-content-space-evenly is-align-items-center'>
+                <div onClick={routeChange(item)} class='fullW is-flex is-justify-content-space-evenly is-align-items-center'>
                    <Icon>{item.image}</Icon>
                    <p class='is-size-4'>{item.name}</p>
                 </div>
