@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './Navbar.scss'
 import { Modal } from '../Shared/modal'
-
+import { NavLink } from 'react-router-dom'
+import SideDrawer from '../SideDrawer/SideDrawer'
+import SideBackdrop  from '../SideDrawer/SideBackdrop'
 
 
 export default function Navbar () {
@@ -11,36 +13,41 @@ export default function Navbar () {
 
     function toggleHover() {
         setHovered(true)
+        setTimeout(() => {
+            setHovered(false)
+        }, 500)
     }
 
-    const renderModal = () => {
-        return (
-            <>
-            <Modal
-            className={modal ? 'modal is-active' : 'modal'}
-            onClick={() => setModal(false)}
-            />
-            </>  
-        )
-    }
 
+    const backdrop = () => {
+        if (modal) {
+            return (
+                <SideBackdrop close={()=>setModal(false)}/>
+            )
+        }
+    }
 
 
     return (
+
         <div class='navbar' role="navigation" aria-label="main navigation">
             <div class='navbar-brand'>
-                <div class='navbar-item'>
+                <NavLink exact to='/'>
+                <div onClick={toggleHover} class={hovered ? 'navbar-item rotateLogo' : 'navbar-item'}>
                     <p class='has-text-black is-size-1 is-size-4-mobile'>❈</p>
                 </div>
+                </NavLink>
                 <div  class='navbar-item'>
-                <p onMouseEnter={toggleHover} class={hovered ? 'has-text-white is-size-1 is-size-4-mobile rotateLogo' : 'has-text-black is-size-1 is-size-4-mobile'}>AJK</p>
+                <p onMouseEnter={toggleHover} class={hovered ? 'has-text-black is-size-1 is-size-4-mobile rotateLogo' : 'has-text-black is-size-1 is-size-4-mobile'}>AJK</p>
                 </div>
                 <a onClick={() => setModal(true)} role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
-                {renderModal()}
+                {/* {renderModal()} */}
+                <SideDrawer modal={modal}/>
+                {backdrop()}
             </div>
             <div class='navbar-menu'>
             <div class='navbar-end'>
@@ -54,9 +61,9 @@ export default function Navbar () {
                     <a class='button mx-1'>
                         Resume
                     </a>
-                    <a class='button mx-1'>
+                    <NavLink exact to='/contact' class='button mx-1'>
                         Contact
-                    </a>
+                    </NavLink>
                 </div>
             </div>
             </div>
