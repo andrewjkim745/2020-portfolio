@@ -7,6 +7,26 @@ import html from './html.svg'
 
 export const projectData = () => [
     {
+        title: 'ToDoList',
+        description: 'A Full Stack CRUD application made during an interview process for PeerPal, that is meant to record your todos, works with full authentication built on express',
+        repo: 'https://github.com/andrewjkim745/ToDoList',
+        image: 'https://media.giphy.com/media/VuLdmIZ5wi6MPRv6ur/giphy.gif',
+        languages: [
+            {
+                language: Js
+            },
+            {
+                language: react 
+            },
+            {
+                language: css
+            },
+            {
+                language: sass
+            },
+        ]
+    },
+    {
         title: 'Caroline Portfolio',
         description: 'Fully responsive, implements modern UI/UX, a portfolio made for my mother, who is a professional pianist',
         repo: 'https://github.com/andrewjkim745/Caroline-Portfolio',
@@ -190,6 +210,26 @@ export const projectData = () => [
             },
             {
                 language: css 
+            }
+        ]
+    },
+    {
+        title: 'Movie Application',
+        description: 'My second project,A movie application using a MockApi and a third party API (themoviedb.org)',
+        repo: 'https://github.com/andrewjkim745/Movie-Application',
+        image: 'https://media.giphy.com/media/KDami0r5MKZ6mAOEw0/giphy.gif',
+        languages: [
+            {
+                language: Js
+            },
+            {
+                language: react
+            },
+            {
+                language: css 
+            },
+            {
+                language: sass
             }
         ]
     }
