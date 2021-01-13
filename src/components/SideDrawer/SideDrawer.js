@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useHistory } from "react-router-dom";
 import { sdData } from '../../assets/sdData'
 import Icon from '@material-ui/core/Icon'
+import { Redirect } from 'react-router-dom'
 
 export default function SlideDrawer(props) {
 
@@ -15,19 +16,19 @@ export default function SlideDrawer(props) {
 
        const history = useHistory();
 
-       const routeChange = (item) =>{ 
-         let path = item.path; 
-         history.push(path);
-       }
+      //  const routeChange = (path) =>{ 
+      //    history.push(path);
+      //  }
+      const routeChange = (item) => {
+         history.push(item.path)
+      }
 
        const sideDrawerContent = () => {
           return (
              <>
              {sdData.map(item => {
                 return (
-
-                
-                <div onClick={routeChange(item)} class='fullW is-flex is-justify-content-space-evenly is-align-items-center'>
+                <div onClick={()=> history.push(item.path)} class='fullW is-flex is-justify-content-space-evenly is-align-items-center'>
                    <Icon>{item.image}</Icon>
                    <p class='is-size-4'>{item.name}</p>
                 </div>
