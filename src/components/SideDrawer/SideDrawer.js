@@ -30,7 +30,7 @@ export default function SlideDrawer(props) {
                 return (
                 <div onClick={()=> history.push(item.path)} class='fullW is-flex is-justify-content-space-evenly is-align-items-center'>
                    <Icon>{item.image}</Icon>
-                   <p class='is-size-4'>{item.name}</p>
+                   <p class='is-size-3'>{item.name}</p>
                 </div>
                 )
              })}
