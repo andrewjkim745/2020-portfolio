@@ -7,7 +7,7 @@ import React from 'react'
 
 export const Card = (props) => {
     return (
-        <div className='card' onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave}>
+        <div className='column is-one-third' onMouseEnter={props.onMouseEnter} onMouseLeave={props.onMouseLeave}>
             <figure class='image is-square'>
                 <img src={props.image} />
             </figure>

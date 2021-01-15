@@ -7,47 +7,63 @@ import CardItem from '../Shared/Card/CardItem'
 export default function ProjectColumns() {
 
 
-    const [ hovered, setHovered ] = useState(false) 
+    // const [ hovered, setHovered ] = useState(false) 
 
 
-    const renderDescription = (project, language) => {
+    // const renderDescription = (project, language) => {
 
-        if (hovered) {
+    //     if (hovered) {
 
-            return (
-                <div className='description'>
-                    <p>{project.description}</p>
-                    <div class='is-flex is-justify-content-center is-align-items-center'>
-                        <figure class='image is-32x32'>
-                            <img src={language.language}/>
-                        </figure>
-                    </div>
-                </div>
-            )
-        }
+    //         return (
+    //             <div className='description'>
+    //                 <p>{project.description}</p>
+    //                 <div class='is-flex is-justify-content-center is-align-items-center'>
+    //                     <figure class='image is-32x32'>
+    //                         <img src={language.language}/>
+    //                     </figure>
+    //                 </div>
+    //             </div>
+    //         )
+    //     }
         
-    }
+    // }
+
+    // const Projects = () => {
+    //     return (
+    //         <div class='columns is-gapless is-multiline'>
+    //         {projectArray.map(project => {
+    //             return (
+    //                 <>
+    //                 <div onMouseEnter={()=> setHovered(true)} onMouseLeave={()=> setHovered(false)} class='column is-one-third'>
+    //                     <figure class='image is-square'>
+    //                         <img src={project.image}/>
+    //                         <div class='columns'>
+    //                         </div> 
+    //                     </figure>
+    //                 </div>
+    //                 </>
+    //             )
+    //         })}
+    //         </div>
+    //     )
+    // }
+
 
     const Projects = () => {
         return (
             <div class='columns is-gapless is-multiline'>
-            {projectArray.map(project => {
-                return (
-                    <>
-                    <div onMouseEnter={()=> setHovered(true)} onMouseLeave={()=> setHovered(false)} class='column is-one-third'>
-                        <figure class='image is-square'>
-                            <img src={project.image}/>
-                            <div class='columns'>
-                            </div> 
-                        </figure>
-                    </div>
-                    </>
-                )
-            })}
+                {projectArray.map(project => {
+                    return (
+                        <>
+                        <CardItem
+                        image={project.image}
+                        />
+                        </>
+                    )
+                })}
             </div>
         )
     }
-
 
     return ( 
         <body>
