@@ -11,6 +11,11 @@ body{
     padding: 3rem
 }
 
+.description {
+    position: relative;
+    z-index: 9000000
+}
+
 .dog {
     transform: rotateY(180deg);
     animation: dogRun 5s infinite;
