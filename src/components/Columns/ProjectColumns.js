@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import projectArray from '../../assets/projectData'
+import { projectArray } from '../../assets/projectData'
 
 
 
@@ -10,9 +10,10 @@ export default function ProjectColumns() {
 
     const Projects = () => {
         return (
-            <>
+            <div class='columns is-multiline'>
             {projectArray.map(project => {
                 return (
+                    <>
                     <div onMouseEnter={()=> setHovered(true)} onMouseLeave={()=> setHovered(false)} class='column is-one-third'>
                         <figure class='image is-square'>
                             <img src={project.image}/>
@@ -20,16 +21,19 @@ export default function ProjectColumns() {
                             {project.languages.map(language => {
                                 return (
                                     <div class='column'>
-                                    <img src={language}/>
+                                        <figure class='image is-32x32'>
+                                        <img src={language.language}/>
+                                        </figure>
                                     </div>
                                 )
                             })}
-                            </div>
+                            </div> 
                         </figure>
                     </div>
+                    </>
                 )
             })}
-            </>
+            </div>
         )
     }
 
@@ -37,9 +41,10 @@ export default function ProjectColumns() {
     return ( 
         <body>
             <section class='section'>
-                <div class='container'>
-                    {Projects}
-                </div>
+                {/* <div class='container'> */}
+                    <h1 class='title is-size-2 has-text-centered'>Projects</h1>
+                    {Projects()}
+                {/* </div> */}
             </section>
         </body>
     )

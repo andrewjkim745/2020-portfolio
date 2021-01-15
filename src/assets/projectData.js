@@ -5,7 +5,7 @@ import sass from './sass.svg'
 import rails from './rails.svg'
 import html from './html.svg'
 
-export const projectData = () => [
+export const projectArray = [
     {
         title: 'ToDoList',
         description: 'A Full Stack CRUD application made during an interview process for PeerPal, that is meant to record your todos, works with full authentication built on express',
@@ -24,6 +24,26 @@ export const projectData = () => [
             {
                 language: sass
             },
+        ]
+    },
+    {
+        title: 'WhichDayz',
+        description: 'Web App designed for a startup called WhichDayz that was my first attempt at implementing firebase authentication successfuly',
+        repo: 'https://github.com/whichdayz/whichdayz-web',
+        image: 'https://media.giphy.com/media/Nc58PcJRLPjagOlvoM/giphy.gif',
+        languages: [
+            {
+                language: Js
+            },
+            {
+                language: react 
+            },
+            {
+                language: sass
+            },
+            {
+                language: css 
+            }
         ]
     },
     {
