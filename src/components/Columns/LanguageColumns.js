@@ -5,7 +5,7 @@ import { HeroTitle } from '../Shared/Title/HeroTitle'
 import { CardImage } from '../Shared/CardImage'
 
 
-export const ProjectColumns = () => {
+export const LanguageColumns = () => {
     
     return (
         <div style={{ backgroundColor:'lightgoldenrodyellow' }} class='is-flex-direction-column is-justify-content-center p10'>

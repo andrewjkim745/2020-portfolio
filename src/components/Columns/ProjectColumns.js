@@ -38,7 +38,7 @@ export default function ProjectColumns() {
         <body>
             <section class='section'>
                 <div class='container'>
-                    
+                    {Projects}
                 </div>
             </section>
         </body>
