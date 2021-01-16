@@ -57,7 +57,13 @@ export default function ProjectColumns() {
                         <>
                         <CardItem
                         image={project.image}
-                        />
+                        >
+                            {project.languages.map(language =>{
+                                return (
+                                    <img class='image is-32x32' src={language}></img>
+                                )
+                            })}
+                        </CardItem>
                         </>
                     )
                 })}
