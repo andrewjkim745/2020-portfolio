@@ -60,7 +60,9 @@ export default function ProjectColumns() {
                         >
                             {project.languages.map(language =>{
                                 return (
-                                    <img class='image is-32x32' src={language}></img>
+                                    <>
+                                    <img class='image is-32x32' src={language}/>
+                                    </>
                                 )
                             })}
                         </CardItem>
