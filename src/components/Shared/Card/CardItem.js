@@ -26,7 +26,7 @@ export default class CardItem extends React.Component {
             {props => (
                 <div class='springContainer' style={props}>
                     <div class='hoverCard'>
-                    <p class='has-text-white has-text-weight-bold px-6'>{this.props.description}</p>
+                    <p class='is-size-6-mobile has-text-white has-text-weight-bold px-6'>{this.props.description}</p>
                     <div class='is-flex'>
                     {this.props.children}
                     </div>
