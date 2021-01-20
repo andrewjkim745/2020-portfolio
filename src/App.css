@@ -34,6 +34,20 @@ body{
     height: 100%;
 }
 
+.lightOpacity {
+    opacity: .7;
+    background-color: black; 
+}
+
+
+.hoverCard {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+}
+
 .w90 {
     width: 90%;
 }
