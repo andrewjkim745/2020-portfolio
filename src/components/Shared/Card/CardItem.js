@@ -13,9 +13,9 @@ export default class CardItem extends React.Component {
     renderDescription = () => {
       if (this.state.hover) {
         return (
-          <div className='description is-flex is-flex-direction-column'>
+          <div className='description wh100 is-flex is-flex-direction-column'>
               <p>{this.props.description}</p>
-              <div class='is-flex'>
+              <div class='is-flex is-justify-content-center is-align-items-center'>
                   {this.props.children}
               </div>
           </div>
