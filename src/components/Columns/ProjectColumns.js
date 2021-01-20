@@ -57,6 +57,7 @@ export default function ProjectColumns() {
                         <>
                         <CardItem
                         image={project.image}
+                        description={project.description}
                         >
                             {project.languages.map(language =>{
                                 return (

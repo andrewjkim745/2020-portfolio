@@ -17,7 +17,7 @@ export default class CardItem extends React.Component {
       if (this.state.hover) {
         return (
           <div className='description wh100 is-flex is-flex-direction-column'>
-              <p>{this.props.description}</p>
+             
               <div class='is-flex  is-justify-content-center is-align-items-center wh100'>
             <Spring
             from={{opacity: 0}}
@@ -26,8 +26,11 @@ export default class CardItem extends React.Component {
             {props => (
                 <div class='springContainer' style={props}>
                     <div class='hoverCard'>
-                  {this.props.children}
-                </div>
+                    <p class='has-text-white has-text-weight-bold px-6'>{this.props.description}</p>
+                    <div class='is-flex'>
+                    {this.props.children}
+                    </div>
+                    </div>
                 </div>
             )}
             </Spring>

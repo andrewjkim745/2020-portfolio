@@ -43,14 +43,17 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 90%;
     background-color: black; 
+    text-align:center;
 }
 
 
 .hoverCard {
     display:flex;
+    flex-direction: column;
+    align-items: center;
      
 }
 
