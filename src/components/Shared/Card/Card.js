@@ -13,6 +13,7 @@ export const Card = (props) => {
             </figure>
             {props.children}
             {props.renderVotesRatings}
+            
         </div>
     )
 }

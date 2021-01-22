@@ -11,9 +11,6 @@ export const CardImage = ({ image, name }) => {
                     <img src={image} />
                 </figure>
             </div>
-            <div class='content is-flex is-justify-content-center'>
-                <p class='title is-size-2'>{name}</p>
-            </div>
         </div>
     )
 }

@@ -151,7 +151,7 @@ export const projectArray = [
     },
     {
         title: 'Gameboxd',
-        description: 'Full stack application based on the design of Letterboxd in which users can save their favorite retro gba games. Made out of personal enjoyment and my love for my nostalgia',
+        description: 'Full stack application based on the design of Letterboxd in which users can save their favorite retro gba games.',
         repo: 'https://github.com/andrewjkim745/Gameboy-Box',
         image: 'https://media.giphy.com/media/j5z15zrcre25h4Vdyt/giphy.gif',
         languages: [
