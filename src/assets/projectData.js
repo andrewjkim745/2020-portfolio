@@ -8,7 +8,7 @@ import html from './html.svg'
 export const projectArray = [
     {
         title: 'ToDoList',
-        description: 'A Full Stack CRUD application made during an interview process for PeerPal, that is meant to record your todos, works with full authentication built on express',
+        description: 'A Full Stack ToDo CRUD application made during an interview process for PeerPal, works with full authentication',
         repo: 'https://github.com/andrewjkim745/ToDoList',
         image: 'https://media.giphy.com/media/VuLdmIZ5wi6MPRv6ur/giphy.gif',
         languages: [

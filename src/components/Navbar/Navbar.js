@@ -34,11 +34,11 @@ export default function Navbar () {
             <div class='navbar-brand'>
                 <NavLink exact to='/'>
                 <div onClick={toggleHover} class={hovered ? 'navbar-item rotateLogo' : 'navbar-item'}>
-                    <p class='has-text-black is-size-1 is-size-4-mobile'>❈</p>
+                    <p class='has-text-black is-size-4 is-size-5-mobile'>❈</p>
                 </div>
                 </NavLink>
                 <div  class='navbar-item'>
-                <p class='has-text-black is-size-1 is-size-4-mobile'>AJK</p>
+                <p class='has-text-black is-size-4 is-size-5-mobile'>AJK</p>
                 </div>
                 <a onClick={() => setModal(true)} role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>

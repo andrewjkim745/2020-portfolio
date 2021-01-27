@@ -107,7 +107,7 @@ body{
 
   .fullW {
       width: 100%;
-      border-bottom: 2px solid lightslategrey;
+      border-bottom: 1px solid lightslategrey;
       padding: 10px;
   }
 /* .open {

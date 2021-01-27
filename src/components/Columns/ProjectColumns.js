@@ -19,7 +19,7 @@ export default function ProjectColumns() {
                         description={project.description}
                         color='dark'
                         repo={project.repo}
-                        title='View Repo'
+                        title='View Project'
                         >
                             {project.languages.map(language =>{
                                 return (

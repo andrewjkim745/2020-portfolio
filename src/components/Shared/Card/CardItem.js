@@ -1,8 +1,7 @@
 import React from 'react'
 import { Card } from './Card'
 import { Spring } from 'react-spring/renderprops';
-import {Transition} from 'react-spring/renderprops'
-import Button from '../button'
+import Button from '../button';
 
 export default class CardItem extends React.Component {
     constructor(props) {
