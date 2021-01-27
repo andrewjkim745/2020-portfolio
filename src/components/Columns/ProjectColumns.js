@@ -10,7 +10,7 @@ export default function ProjectColumns() {
 
     const Projects = () => {
         return (
-            <div class='columns is-gapless is-multiline'>
+            <div class='columns is-gapless is-multiline pb-6'>
                 {projectArray.map(project => {
                     return (
                         <>

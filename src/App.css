@@ -110,14 +110,18 @@ body{
       border-bottom: 1px solid lightslategrey;
       padding: 10px;
   }
-/* .open {
-    transform: translateX(0px);
-    width: 0%;
-    animation-name: closeModal;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-    transition: 1s ease-in;
-} */
+
+  .shiftTop { 
+      position: relative;
+      top: -2.5rem;
+      box-shadow:0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px lightgray;
+  }
+  .transparent {
+      background-color: transparent;
+  }
+  .transparent:hover {
+      background-color: white;
+  }
 @keyframes dogRun {
     0% {
         left: 0;
