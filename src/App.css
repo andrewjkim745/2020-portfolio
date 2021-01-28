@@ -124,7 +124,10 @@ body{
   }
 
   .navTransparent {
-      
+      background-color: transparent;
+      position: absolute;
+      width: 100vw;
+
   }
 @keyframes dogRun {
     0% {

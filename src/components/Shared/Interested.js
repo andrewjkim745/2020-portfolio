@@ -16,7 +16,7 @@ export const Interested = () => {
                     </div>
                     <div class='column'>
                         <NavLink exact to='/contact'>
-                        <a class='button is-primary is-outlined is-rounded is-medium'>Lets do this</a>
+                        <a class='button is-danger is-outlined is-rounded is-medium'>Lets do this</a>
                         </NavLink>
                     </div>
                 </div>
