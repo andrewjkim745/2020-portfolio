@@ -30,7 +30,7 @@ export default function Navbar () {
 
     return (
 
-        <div class='navbar' role="navigation" aria-label="main navigation">
+        <div style={{ }}class='navbar' role="navigation" aria-label="main navigation">
             <div class='navbar-brand'>
                 <NavLink exact to='/'>
                 <div onClick={toggleHover} class={hovered ? 'navbar-item rotateLogo' : 'navbar-item'}>

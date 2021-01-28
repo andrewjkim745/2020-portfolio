@@ -1,4 +1,5 @@
 import React  from 'react'
+import { NavLink } from 'react-router-dom'
 
 
 export const Interested = () => {
@@ -14,7 +15,9 @@ export const Interested = () => {
                         <p>Interested in working together? We should meet up and chat! Coffee is on me</p>
                     </div>
                     <div class='column'>
+                        <NavLink exact to='/contact'>
                         <a class='button is-primary is-outlined is-rounded is-medium'>Lets do this</a>
+                        </NavLink>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@ export default function LanguageColumns() {
         <div class='columns is-multiline my-6'>
             {languageArray.map(language => {
             return (
-            <Column columnSize='column is-one-quarter-desktop'>
+            <Column columnSize='column is-one-quarter'>
                 <AnimatedCard
                 image={language.image}
                 name={language.name}

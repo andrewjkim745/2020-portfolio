@@ -122,6 +122,10 @@ body{
   .transparent:hover {
       background-color: white;
   }
+
+  .navTransparent {
+      
+  }
 @keyframes dogRun {
     0% {
         left: 0;
