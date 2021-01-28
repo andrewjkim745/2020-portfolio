@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from './Card'
 import { Spring } from 'react-spring/renderprops';
-
+import Button from '../button';
 
 export default class CardItem extends React.Component {
     constructor(props) {
@@ -21,14 +21,22 @@ export default class CardItem extends React.Component {
               <div class='is-flex  is-justify-content-center is-align-items-center wh100'>
             <Spring
             from={{opacity: 0}}
-            to={{opacity: .7}}
+            to={{opacity: .8}}
             >
             {props => (
                 <div class='springContainer' style={props}>
                     <div class='hoverCard'>
-                    <p class='is-size-6-mobile is-size-4-desktop has-text-white has-text-weight-bold px-6'>{this.props.description}</p>
-                    <div class='is-flex'>
-                    {this.props.children}
+                    <p class='has-text-white has-text-weight-bold mx-1'>{this.props.description}</p>
+                    <div class='is-flex is-flex-direction-column'>
+                        <div class='is-flex mb-4'>
+                        {this.props.children}
+                        </div>
+                        <Button
+                        color={this.props.color}
+                        title={this.props.title}
+                        repo={this.props.repo}
+                        />
+
                     </div>
                     </div>
                 </div>

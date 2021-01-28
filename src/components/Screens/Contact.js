@@ -41,7 +41,7 @@ export default class Contact extends React.Component {
         return (
             <>
             <NavBar/>
-            <div class='container p-5'>
+            <div style={{ position: 'relative', top: 50}}class='container p-5'>
                 <DogMove/>
                 <section class='has-text-centered'>
                     <div class='columns is-centered'>

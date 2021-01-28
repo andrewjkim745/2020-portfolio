@@ -8,7 +8,7 @@ import html from './html.svg'
 export const projectArray = [
     {
         title: 'ToDoList',
-        description: 'A Full Stack CRUD application made during an interview process for PeerPal, that is meant to record your todos, works with full authentication built on express',
+        description: 'A Full Stack ToDo CRUD application made during an interview process for PeerPal, works with full authentication',
         repo: 'https://github.com/andrewjkim745/ToDoList',
         image: 'https://media.giphy.com/media/VuLdmIZ5wi6MPRv6ur/giphy.gif',
         languages: [
@@ -151,7 +151,7 @@ export const projectArray = [
     },
     {
         title: 'Gameboxd',
-        description: 'Full stack application based on the design of Letterboxd in which users can save their favorite retro gba games. Made out of personal enjoyment and my love for my nostalgia',
+        description: 'Full stack application based on the design of Letterboxd in which users can save their favorite retro gba games.',
         repo: 'https://github.com/andrewjkim745/Gameboy-Box',
         image: 'https://media.giphy.com/media/j5z15zrcre25h4Vdyt/giphy.gif',
         languages: [
