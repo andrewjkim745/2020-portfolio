@@ -17,12 +17,8 @@ export default class Container extends React.Component {
     static contextType = ThemeContext
 
     render() {
-        console.log(this.context)
-        const { isLightTheme, light, dark } = this.context;
-        const theme = isLightTheme ? light : dark
-
         return (
-            // <div style={{position: 'relative', height: '100vh'}}>
+
             <>
             <Navbar/>
                 <Backdrop />
@@ -36,9 +32,7 @@ export default class Container extends React.Component {
                 <ProjectColumns/>
                 <Interested/>
                 <Footer/>
-                {/* <Contact/> */}
                 </>
-            // {/* // </div> */}
         )
     }
 }
