@@ -12,8 +12,8 @@ export const Footer = () => {
                 <img class='image is-128x128'src={AnnoyingDog}/>
                 <div class='columns is-centered'>
                     <div class='column'>
-                    <p class='title is-size-4 has-text-weight-light has-text-white'>Learning & internalizing new things everyday</p>
-                    <p class='subtitle is-size-5 has-text-weight-light has-text-white'>One Step At A Time</p>
+                    <p class='title is-size-1-fullhd is-size-4 has-text-weight-light has-text-white'>Learning & internalizing new things everyday</p>
+                    <p class='subtitle is-size-1-fullhd  is-size-5 has-text-weight-light has-text-white'>One Step At A Time</p>
                     </div>
                 </div>
                 <SocialMediaIcons/>

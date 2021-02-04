@@ -22,16 +22,16 @@ export default class Contact extends React.Component {
     }
 
 
-    sendEmail(e) {
-        e.preventDefault();
+    // sendEmail(e) {
+    //     e.preventDefault();
     
-        emailjs.sendForm('service_65a1v3r', 'template_i4mt20m', e.target, 'user_r0gnkzwAVyWwIpchjY3RU')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-      }
+    //     emailjs.sendForm('service_65a1v3r', 'template_i4mt20m', e.target, 'user_r0gnkzwAVyWwIpchjY3RU')
+    //       .then((result) => {
+    //           console.log(result.text);
+    //       }, (error) => {
+    //           console.log(error.text);
+    //       });
+    //   }
     handleChange = (e) => {
         this.setState({
             [e.target.name]: e.target.value
@@ -52,7 +52,7 @@ export default class Contact extends React.Component {
                 <section class='has-text-centered'>
                     <div class='columns is-centered'>
                         <div class='column is-three-quarters'>
-                            <h1 class='is-spaced is-size-2-tablet is-size-3-mobile is-size-1-desktop'>
+                            <h1 class='is-size-1-fullhd is-spaced is-size-2-tablet is-size-3-mobile is-size-1-desktop'>
                                 Thanks for taking the time to reach out! How can I help you?
                             </h1>
                         </div>
@@ -83,7 +83,7 @@ export default class Contact extends React.Component {
                 <div class='columns is-centered'>
                     <div class='column is-one-third'>
                         <div class='is-flex is-justify-content-center'>
-                        <Button onSubmit={sendEmail} color='secondary' variant='contained'>
+                        <Button color='secondary' variant='contained'>
                             Submit
                         </Button>
                         </div>

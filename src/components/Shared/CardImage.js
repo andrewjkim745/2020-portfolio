@@ -13,7 +13,7 @@ export const CardImage = ({ image, name }) => {
                 </figure>
              {/* </div> */}
             <div class='is-flex is-justify-content-center is-align-items-centered'>
-                <p>{name}</p>
+                <p class='title is-size-1-fullhd'>{name}</p>
             </div>
         {/* </div> */}
         </>
