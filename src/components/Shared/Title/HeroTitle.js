@@ -12,7 +12,7 @@ export const HeroTitle = ({ title, color, fontFamily }) => {
         <section class="hero">
             <div class='hero-body'>
                 <div class='container has-text-centered'>
-                    <p class='title is-spaced has-text-weight-light is-size-2 is-size-1-fullhd is-size-5-mobile' style={{ fontFamily: `${fontFamily}`, color: `${color}` }} >{title}</p>
+                    <h1 class='title is-spaced has-text-weight-light is-size-5-mobile' style={{ fontFamily: `${fontFamily}`, color: `${color}` }} >{title}</h1>
                     <TextLoop
                     mask={true}
                     interval={1500}
@@ -21,10 +21,10 @@ export const HeroTitle = ({ title, color, fontFamily }) => {
                         damping: 8
                     }}
                     >
-                        <p class='subtitle has-text-weight-light is-size-2 is-size-1-fullhd is-size-5-mobile has-text-danger'>an avid basketball fan</p>
-                        <p class='subtitle has-text-weight-light is-size-2 is-size-1-fullhd is-size-5-mobile has-text-danger'>a nationally ranked fencer</p>
-                        <p class='subtitle has-text-weight-light is-size-2 is-size-1-fullhd is-size-5-mobile has-text-danger'>a movie/video game lover</p>
-                        <p class='subtitle has-text-weight-light is-size-2 is-size-1-fullhd is-size-5-mobile has-text-danger'>a proud dog owner</p>
+                        <h1 class='subtitle has-text-weight-light is-size-5-mobile has-text-danger'>an avid basketball fan</h1>
+                        <h1 class='subtitle has-text-weight-light is-size-5-mobile has-text-danger'>a nationally ranked fencer</h1>
+                        <h1 class='subtitle has-text-weight-light is-size-5-mobile has-text-danger'>a movie/video game lover</h1>
+                        <h1 class='subtitle has-text-weight-light is-size-5-mobile has-text-danger'>a proud dog owner</h1>
                     </TextLoop>
                 </div>
             </div>

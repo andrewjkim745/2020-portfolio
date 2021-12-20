@@ -13,14 +13,16 @@ export const About = () => {
             <div class='container'>
                 <div class='columns is-centered'>
                     <Column
-                    columnSize={'column is-three-fifths'}
+                    columnSize={'column'}
                     >   
-                        <img class='mb-4' src={Avatar}/>
+                        <figure class='mb-6 image is-3by1'>
+                        <img src={Avatar}/>
+                        </figure>
                         <Title
                         title={'Hi, my name is Andrew. Nice to meet you'}
                         />
                         <Subtitle
-                        subtitle={'A few years ago I tried my hand at programming with some free code courses such as Udemy and have been hooked ever since. Ever since then I have developed into a competent Full Stack Developer and have gained valuable experience working for startups and small businesses. These opportunities allowed me to learn first hand how to build the best possible product for consumer experience and use.'}
+                        subtitle={'In October of 2018 I took my first few steps towards becoming a developer. I was always fascinated with technology and coding and developed an interest in building my own websites or applications. Starting with code courses on Udemy and studying independently, Ive built up skills that have helped me become a competent full stack developer. Those skills landed me positions at startups and private companies doing what I love. My work experience and hobby projects have equipped me to write code that functions well and elevates the end user experience.'}
                         />
                     </Column>
                 </div>

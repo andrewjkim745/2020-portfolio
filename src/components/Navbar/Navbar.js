@@ -33,12 +33,12 @@ export default function Navbar () {
         <div style={{ }}class='navbar navTransparent' role="navigation" aria-label="main navigation">
             <div class='navbar-brand'>
                 <NavLink exact to='/'>
-                <div onClick={toggleHover} class={hovered ? 'navbar-item rotateLogo' : 'navbar-item'}>
-                    <p class='has-text-white is-size-4 is-size-5-mobile'>❈</p>
-                </div>
+                {/* <div onClick={toggleHover} class={hovered ? 'navbar-item rotateLogo' : 'navbar-item'}>
+                    <p class='has-text-white is-size-1-fullhd is-size-4 is-size-5-mobile'>❈</p>
+                </div> */}
                 </NavLink>
                 <div  class='navbar-item'>
-                <p class='has-text-white has-text-weight-light is-size-4 is-size-5-mobile'>AJK</p>
+                <p class='has-text-white has-text-weight-light is-size-1-fullhd is-size-4 is-size-5-mobile'>AJK</p>
                 </div>
                 <a onClick={() => setModal(true)} role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
@@ -53,11 +53,11 @@ export default function Navbar () {
             <div class='navbar-end'>
                 <div class="navbar-item ">
                     <NavLink exact to='/'>
-                    <a class='button mx-1'>
+                    <a class='is-size-2-fullhd is-size-4 button mx-3'>
                         Home
                     </a>
                     </NavLink>
-                    <NavLink exact to='/contact' class='button mx-1'>
+                    <NavLink exact to='/contact' class='is-size-2-fullhd is-size-4 button mx-1'>
                         Contact
                     </NavLink>
                 </div>

@@ -39,7 +39,7 @@ export default function ProjectColumns() {
     return ( 
         <body>
             <section class='section' style={{backgroundColor: 'powderblue'}}>
-                    <h1 class='title is-size-2 has-text-centered'>Projects</h1>
+                    <h1 class='title has-text-centered'>Projects</h1>
                     {Projects()}
             </section>
         </body>
