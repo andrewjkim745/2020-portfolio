@@ -21,13 +21,13 @@ export default function ProjectColumns() {
                         repo={project.repo}
                         title='View Project'
                         >
-                            {project.languages.map(language =>{
+                            {/* {project.languages.map(language =>{
                                 return (
                                     <>
                                     <img class='image is-32x32' src={language.language}/>
                                     </>
                                 )
-                            })}
+                            })} */}
                         </CardItem>
                         </>
                     )

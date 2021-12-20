@@ -12,10 +12,16 @@ export default function LanguageColumns() {
             {languageArray.map(language => {
             return (
             <Column columnSize='column is-one-quarter'>
-                <AnimatedCard
-                image={language.image}
-                name={language.name}
-                />
+                <div class='card'>
+                    <div class='card-image'>
+                        <figure class='image is-1by1'>
+                        <img src={language.image}/>
+                        </figure>
+                    </div>
+                    <div class='content is-flex is-justify-content-center'>
+                        <h1>{language.name}</h1>
+                    </div>
+                </div>
             </Column>
             )
             })}

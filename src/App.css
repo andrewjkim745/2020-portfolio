@@ -69,16 +69,6 @@ body{
     transform: rotate(360deg);
     transition: all 0.3s ease-in-out 0s;
 }
-
-/* .sideDrawer {
-    width: 50%;
-    height:100vh; 
-    animation-name: openModal;
-    animation-duration: .2s;
-    animation-fill-mode: forwards;
-    transform: translateX(100%);
-    transition: transform 1s ease-in;
-} */
 .side-drawer { 
     height: 100%;
     background: white;
@@ -151,10 +141,17 @@ body{
 }
 
 
-
+@media screen and (min-width: 1500px) {
+    .p10 {
+        padding: 20rem;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+}
 
 @media screen and (min-width: 426px) and (max-width:1023px) {
     .p10 {
-        padding: 6rem
+        padding: 15rem;
     }
 }

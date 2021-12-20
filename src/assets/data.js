@@ -5,7 +5,8 @@ import ruby from './ruby.svg'
 import sass from './sass.svg'
 import css from './css.svg'
 import rails from './rails.svg'
-import python from './python.svg'
+import expressjs from './expressjs.svg'
+import git from './git.svg'
 
 
 
@@ -41,7 +42,7 @@ export const languageArray = [
         name: 'Rails'
     },
     {
-        image: python,
-        name: 'Python'
+        image: git,
+        name: 'Git'
     }
 ]
