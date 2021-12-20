@@ -10,7 +10,7 @@ export default function ProjectColumns() {
 
     const Projects = () => {
         return (
-            <div class='columns is-gapless is-multiline pb-6'>
+            <div class='columns is-gapless is-multiline p1'>
                 {projectArray.map(project => {
                     return (
                         <>
@@ -39,7 +39,7 @@ export default function ProjectColumns() {
     return ( 
         <body>
             <section class='section' style={{backgroundColor: 'powderblue'}}>
-                    <h1 class='title has-text-centered'>Projects</h1>
+                    <h1 class='mb-6 title has-text-centered '>Projects</h1>
                     {Projects()}
             </section>
         </body>

@@ -9,6 +9,7 @@ import SideBackdrop  from '../SideDrawer/SideBackdrop'
 export default function Navbar () {
     const [ hovered, setHovered ] = useState(false)
     const [ modal, setModal ] = useState(false)
+    const [ changed , setColor ] = useState(false)
     
 
     function toggleHover() {
@@ -17,6 +18,8 @@ export default function Navbar () {
             setHovered(false)
         }, 500)
     }
+
+
 
 
     const backdrop = () => {
@@ -33,19 +36,14 @@ export default function Navbar () {
         <div style={{ }}class='navbar navTransparent' role="navigation" aria-label="main navigation">
             <div class='navbar-brand'>
                 <NavLink exact to='/'>
-                {/* <div onClick={toggleHover} class={hovered ? 'navbar-item rotateLogo' : 'navbar-item'}>
-                    <p class='has-text-white is-size-1-fullhd is-size-4 is-size-5-mobile'>❈</p>
-                </div> */}
                 </NavLink>
                 <div  class='navbar-item'>
-                <p class='has-text-white has-text-weight-light is-size-1-fullhd is-size-4 is-size-5-mobile'>AJK</p>
                 </div>
-                <a onClick={() => setModal(true)} role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <a onClick={() => setModal(true)} role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
-                {/* {renderModal()} */}
                 <SideDrawer modal={modal}/>
                 {backdrop()}
             </div>
@@ -53,12 +51,12 @@ export default function Navbar () {
             <div class='navbar-end'>
                 <div class="navbar-item ">
                     <NavLink exact to='/'>
-                    <a class='is-size-2-fullhd is-size-4 button mx-3'>
+                    <h1 class='is-size-1-fullhd is-size-4 button mx-3'>
                         Home
-                    </a>
+                    </h1>
                     </NavLink>
-                    <NavLink exact to='/contact' class='is-size-2-fullhd is-size-4 button mx-1'>
-                        Contact
+                    <NavLink exact to='/contact'>
+                        <h1 class='is-size-1-fullhd is-size-4 button mx-3'>Contact</h1>
                     </NavLink>
                 </div>
             </div>

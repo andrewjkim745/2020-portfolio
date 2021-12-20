@@ -10,7 +10,9 @@ body{
 .p10 { 
     padding: 3rem
 }
-
+.p1 {
+    padding: 1rem;
+}
 .description {
     position: absolute;
     top: 0;
@@ -141,17 +143,53 @@ body{
 }
 
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1441px) and (max-width:2559px) {
     .p10 {
+        padding: 10rem;
+    }
+    .p1 {
+        padding: 10rem;
+    }
+    h1 {
+        font-size: 3rem !important;
+    }
+}
+
+@media screen and (min-width: 2560px) and (max-width: 5000px) {
+
+    .p10 {
+        padding: 35rem;
+
+    }
+    .p1 {
         padding: 15rem;
     }
     h1 {
         font-size: 4rem !important;
     }
+    h2 {
+        font-size: 6rem !important;
+    }
+
 }
 
-@media screen and (min-width: 426px) and (max-width:1023px) {
-    /* .p10 {
-        padding: 15rem;
-    } */
+@media screen and (min-width: 5001px) and (max-width: 10000px) {
+    .p10 {
+        padding: 50rem;
+    }
+    .p1 {
+        padding: 50rem;
+    }
+    h1 {
+        font-size: 8rem !important;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .p10 {
+        padding: 10rem;
+    }
+    .p1 {
+        padding: 5rem;
+    }
 }

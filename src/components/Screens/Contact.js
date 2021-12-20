@@ -1,6 +1,5 @@
 import React from 'react'
 import { Button, TextField } from '@material-ui/core'
-// import { Title } from '../Shared/Title'
 import  DogMove  from '../DogMove'
 import  NavBar  from '../Navbar/Navbar'
 
@@ -79,7 +78,7 @@ export default class Contact extends React.Component {
                     <div class='column is-one-third'>
                         <div class='is-flex is-justify-content-center'>
                         <Button onSubmit={this.handleSubmit} color='secondary' variant='contained'>
-                            Submit
+                            <h1>Submit</h1>
                         </Button>
                         </div>
                     </div>

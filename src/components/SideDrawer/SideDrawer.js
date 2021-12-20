@@ -15,10 +15,6 @@ export default function SlideDrawer(props) {
        const [ hovered, setHovered ] = useState(false)
 
        const history = useHistory();
-
-      //  const routeChange = (path) =>{ 
-      //    history.push(path);
-      //  }
       const routeChange = (item) => {
          history.push(item.path)
       }
