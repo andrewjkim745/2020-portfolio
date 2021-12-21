@@ -28,7 +28,7 @@ export const projectArray = [
     },
     {
         title: 'WhichDayz',
-        description: 'Web App designed for a startup called WhichDayz that was my first attempt at implementing firebase authentication successfuly',
+        description: 'Web App designed for WhichDayz. Was my first time implementing firebase authentication successfully',
         repo: 'https://github.com/whichdayz/whichdayz-web',
         image: 'https://media.giphy.com/media/Nc58PcJRLPjagOlvoM/giphy.gif',
         languages: [
@@ -48,7 +48,7 @@ export const projectArray = [
     },
     {
         title: 'Caroline Portfolio',
-        description: 'Fully responsive, implements modern UI/UX, a portfolio made for my mother, who is a professional pianist',
+        description: 'Fully responsive, implements modern UI/UX, a portfolio made for a professional pianist',
         repo: 'https://github.com/andrewjkim745/Caroline-Portfolio',
         image: 'https://media.giphy.com/media/Qyajkv8vynBHpHbTCF/giphy.gif',
         languages: [

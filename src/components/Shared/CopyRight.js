@@ -8,14 +8,12 @@ import CopyrightIcon from '@material-ui/icons/Copyright';
 export const CopyRight = () => {
     return (
         <>
-        <div style={{opacity:.7}} class='is-size-1-fullhd has-text-white is-flex is-align-items-center mt-3'>
-            <p class='is-size-1-fullhd'>Handcrafted by me</p>
-            <CopyrightIcon/>
-            <p class='is-size-1-fullhd'>Andrew Kim</p>
+        <div style={{opacity:.7}} class='is-flex is-align-items-center has-text-white'>
+            <h4 class='subtitle has-text-white mt-3' >Handcrafted by me</h4>
         </div>
         <div style={{opacity: .6}} class='mt-3'>
             <a href="https://bulma.io">
-            <img class='is-size-1-fullhd' src='https://bulma.io/images/made-with-bulma--white.png' width="400" height="400"/>
+            <img src='https://bulma.io/images/made-with-bulma--white.png' width="300" height="300"/>
             </a>
         </div>
         </>

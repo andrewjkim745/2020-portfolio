@@ -9,15 +9,11 @@ export const Footer = () => {
     return (
         <footer class='section is-primary is-small has-text-centered has-background-dark'>
             <div class='container is-narrow is-flex is-flex-direction-column is-align-items-center is-justify-content-center'>
-                <figure class='image is-128x128'>
+                <figure class='image is-128x128 iS'>
                     <img src={AnnoyingDog}/>
                 </figure>
-                <div class='columns is-centered'>
-                    <div class='column'>
-                    <p class='title is-size-4 has-text-weight-light has-text-white'>Learning & internalizing new things everyday</p>
-                    <p class='subtitle is-size-5 has-text-weight-light has-text-white'>One Step At A Time</p>
-                    </div>
-                </div>
+                    <h2 class='has-text-weight-light has-text-white'>Learning & internalizing new things everyday</h2>
+                    <h2 class='has-text-weight-light has-text-white mb-6'>One Step At A Time</h2>
                 <SocialMediaIcons/>
                 <CopyRight/>
             </div>

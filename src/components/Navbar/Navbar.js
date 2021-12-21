@@ -51,12 +51,12 @@ export default function Navbar () {
             <div class='navbar-end'>
                 <div class="navbar-item ">
                     <NavLink exact to='/'>
-                    <h1 class='is-size-1-fullhd is-size-4 button mx-3'>
+                    <h1 class='is-size-4 button mx-3'>
                         Home
                     </h1>
                     </NavLink>
                     <NavLink exact to='/contact'>
-                        <h1 class='is-size-1-fullhd is-size-4 button mx-3'>Contact</h1>
+                        <h1 class='is-size-4 button mx-3'>Contact</h1>
                     </NavLink>
                 </div>
             </div>

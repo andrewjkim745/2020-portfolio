@@ -9,10 +9,10 @@ export const Interested = () => {
             <div class='box shiftTop p-6'>
                 <div class='columns is-align-items-center'>
                     <div class='column'>
-                        <h1 class='title is-size-1-fullhd'>Start a Project</h1>
+                        <h2 class='title is-size-1-fullhd'>Start a Project</h2>
                     </div>
                     <div class='column'>
-                        <p class='is-size-1-fullhd'>Interested in working together? We should meet up and chat! Coffee is on me</p>
+                        <h2 class='subtitle is-size-1-fullhd'>Interested in working together? We should meet up and chat!</h2>
                     </div>
                     <div class='column'>
                         <NavLink exact to='/contact'>

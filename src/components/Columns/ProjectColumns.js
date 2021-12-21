@@ -21,13 +21,6 @@ export default function ProjectColumns() {
                         repo={project.repo}
                         title='View Project'
                         >
-                            {/* {project.languages.map(language =>{
-                                return (
-                                    <>
-                                    <img class='image is-32x32' src={language.language}/>
-                                    </>
-                                )
-                            })} */}
                         </CardItem>
                         </>
                     )
@@ -39,7 +32,7 @@ export default function ProjectColumns() {
     return ( 
         <body>
             <section class='section' style={{backgroundColor: 'powderblue'}}>
-                    <h1 class='mb-6 title has-text-centered '>Projects</h1>
+                    <h1 class='mb-2 mt-3 title has-text-centered '>Projects</h1>
                     {Projects()}
             </section>
         </body>

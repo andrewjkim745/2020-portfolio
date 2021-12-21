@@ -8,7 +8,7 @@ export default function Button({ title, repo, color }) {
     return (
         <>
         <a href={repo}>
-        <button class={`button is-${color}`}><h1>{title}</h1></button>
+        <button class={`button is-${color}`}><h2>{title}</h2></button>
         </a>
         </>
 

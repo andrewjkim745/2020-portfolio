@@ -161,6 +161,10 @@ body{
         padding: 35rem;
 
     }
+
+    .p6 {
+        padding: 1rem;
+    }
     .p1 {
         padding: 15rem;
     }
@@ -168,7 +172,12 @@ body{
         font-size: 4rem !important;
     }
     h2 {
-        font-size: 6rem !important;
+        font-size: 3rem !important;
+    }
+
+    .iS {
+        width: 200px;
+        height: 200px;
     }
 
 }
@@ -181,7 +190,15 @@ body{
         padding: 50rem;
     }
     h1 {
-        font-size: 8rem !important;
+        font-size: 3rem !important;
+    }
+    h2 {
+        font-size: 7rem !important;
+    }
+
+    .iS {
+        width: 256px;
+        height: 256px;
     }
 }
 
