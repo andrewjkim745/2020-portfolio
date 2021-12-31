@@ -7,6 +7,10 @@ import css from './css.svg'
 import rails from './rails.svg'
 import expressjs from './expressjs.svg'
 import git from './git.svg'
+import mongodb from './mongodb.svg'
+import postgresql from './postgresql.svg'
+import firebase from './firebase.svg'
+
 
 
 
@@ -16,6 +20,22 @@ export const languageArray = [
     {
         image: react,
         name: 'React'
+    },
+    {
+        image: mongodb,
+        name: 'MongoDB'
+    },
+    {
+        image: expressjs,
+        name: 'ExpressJS'
+    },
+    {
+        image: postgresql,
+        name: 'PostgresQL'
+    },
+    {
+        image: firebase,
+        name: 'Firebase'
     },
     {
         image: html,
