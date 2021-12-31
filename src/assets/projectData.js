@@ -7,6 +7,12 @@ import html from './html.svg'
 
 export const projectArray = [
     {
+        title: 'MERN-Exercise-App',
+        description: 'A refresher after a long break learned and successfully created a MERN Fullstack Application with authentication',
+        repo: 'https://github.com/andrewjkim745/MERN-Excercise-App',
+        image: 'https://imgur.com/a/hMxeNhJ'
+    },
+    {
         title: 'ToDoList',
         description: 'A Full Stack ToDo CRUD application made during an interview process for PeerPal, works with full authentication',
         repo: 'https://github.com/andrewjkim745/ToDoList',
@@ -213,23 +219,6 @@ export const projectArray = [
             },
             {
                 language: rails 
-            }
-        ]
-    },
-    {
-        title: 'Korean Menu',
-        description: 'My first project, made for my ideal korean restaurant, is fully responsive',
-        repo: 'https://github.com/andrewjkim745/project-1',
-        image: 'https://media.giphy.com/media/U78QMghyDQ1c6H6UbZ/giphy.gif',
-        languages: [
-            {
-                language: html
-            },
-            {
-                language: Js
-            },
-            {
-                language: css 
             }
         ]
     },
