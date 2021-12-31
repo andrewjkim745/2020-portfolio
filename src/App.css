@@ -153,6 +153,9 @@ body{
     h1 {
         font-size: 3rem !important;
     }
+    h2 {
+        font-size: 2.5rem !important;
+    }
 }
 
 @media screen and (min-width: 2560px) and (max-width: 5000px) {
