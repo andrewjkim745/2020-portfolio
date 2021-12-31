@@ -10,7 +10,7 @@ export const projectArray = [
         title: 'MERN-Exercise-App',
         description: 'A refresher after a long break learned and successfully created a MERN Fullstack Application with authentication',
         repo: 'https://github.com/andrewjkim745/MERN-Excercise-App',
-        image: 'https://imgur.com/a/hMxeNhJ'
+        image: 'https://i.imgur.com/vwCxceR.gif'
     },
     {
         title: 'ToDoList',
