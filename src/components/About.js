@@ -9,7 +9,7 @@ import aReality from '../assets/aReality.svg'
 
 export const About = () => {
     return (
-        <section class='is-large is-primary has-text-centered is-long has-background-danger p-5 py-6'>
+        <section id='About' class='is-large is-primary has-text-centered is-long has-background-danger p-5 py-6'>
             <div class='container'>
                 <div class='columns is-centered'>
                     <Column

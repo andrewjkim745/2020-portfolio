@@ -26,7 +26,7 @@ export default function SlideDrawer(props) {
                 return (
                 <div onClick={()=> history.push(item.path)} class='fullW is-flex is-justify-content-space-evenly is-align-items-center'>
                    <Icon>{item.image}</Icon>
-                   <p class='is-size-3-desktop is-size-6-mobile'>{item.name}</p>
+                   <a href={item.name === 'Contact' ? '': `#${item.name}`} onClick={props.onClick} class='is-size-3-desktop is-size-6-mobile'>{item.name}</a>
                 </div>
                 )
              })}

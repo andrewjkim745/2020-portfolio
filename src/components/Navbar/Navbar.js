@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './Navbar.scss'
+import './Navbar.css'
 import { Modal } from '../Shared/modal'
 import { NavLink } from 'react-router-dom'
 import SideDrawer from '../SideDrawer/SideDrawer'
@@ -39,27 +39,13 @@ export default function Navbar () {
                 </NavLink>
                 <div  class='navbar-item'>
                 </div>
-                <a onClick={() => setModal(true)} role="button" class="navbar-burger has-text-white" aria-label="menu" aria-expanded="false">
+                <a onClick={() => setModal(true)} role="button" style={{display:'unset'}}class="navbar-burger has-text-danger" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
-                <SideDrawer modal={modal}/>
+                <SideDrawer onClick={()=>setModal(false)} modal={modal}/>
                 {backdrop()}
-            </div>
-            <div class='navbar-menu'>
-            <div class='navbar-end'>
-                <div class="navbar-item ">
-                    <NavLink exact to='/'>
-                    <h1 class='is-size-4 button mx-3'>
-                        Home
-                    </h1>
-                    </NavLink>
-                    <NavLink exact to='/contact'>
-                        <h1 class='is-size-4 button mx-3'>Contact</h1>
-                    </NavLink>
-                </div>
-            </div>
             </div>
         </div>
     )

@@ -8,8 +8,7 @@ import  ProjectColumns from './Columns/ProjectColumns'
 import { About } from './About'
 import { Interested } from '../components/Shared/Interested'
 import { Footer } from './Footer'
-import  Contact from './Screens/Contact'
-import Aos from 'aos'
+
 
 
 export default class Container extends React.Component {
@@ -22,12 +21,11 @@ export default class Container extends React.Component {
         const theme = isLightTheme ? light : dark
 
         return (
-            // <div style={{position: 'relative', height: '100vh'}}>
             <>
             <Navbar/>
                 <Backdrop />
                 <HeroTitle
-                    title='Full Stack Developer, and'
+                    title='Andrew J Kim'
                     color='white'
                     fontFamily= 'Roboto Slab'
                 />
@@ -36,9 +34,7 @@ export default class Container extends React.Component {
                 <ProjectColumns/>
                 <Interested/>
                 <Footer/>
-                {/* <Contact/> */}
                 </>
-            // {/* // </div> */}
         )
     }
 }

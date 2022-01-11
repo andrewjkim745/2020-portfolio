@@ -1,5 +1,5 @@
 import React from 'react'
-import './HeroTitle.scss'
+import './HeroTitle.css'
 import TextLoop from 'react-text-loop'
 
 
