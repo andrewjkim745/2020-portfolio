@@ -20,7 +20,7 @@ body{
     z-index: 9000000
 }
 .smallerSubtitle {
-    font-size: 1rem;
+    font-size: .9rem;
 }
 
 .dog {
@@ -88,6 +88,13 @@ body{
  }
  .side-drawer.open {
     transform: translateX(0);
+ }
+
+ .card:hover {
+     transform: scale(1.05);
+     transition: 0.2s;
+     transition-timing-function: ease-in;
+     cursor: pointer;
  }
 
 .backdrop {

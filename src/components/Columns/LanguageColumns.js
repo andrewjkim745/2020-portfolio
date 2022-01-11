@@ -5,6 +5,8 @@ import AnimatedCard from '../Shared/animatedCard'
 
 export default function LanguageColumns() {
 
+
+    
     return (
         <div style={{ backgroundColor:'lightgoldenrodyellow' }} class='is-flex-direction-column is-justify-content-center p10'>
             <h1 class='title is-size-6-mobile has-text-centered'>Languages/Frameworks Learned</h1>
