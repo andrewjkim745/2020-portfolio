@@ -31,7 +31,7 @@ export default function ProjectColumns() {
 
     return ( 
         <body>
-            <section class='section' style={{backgroundColor: 'powderblue'}}>
+            <section class='section has-background-danger'>
                     <h1 class='mb-2 mt-3 title has-text-centered '>Projects</h1>
                     {Projects()}
             </section>
