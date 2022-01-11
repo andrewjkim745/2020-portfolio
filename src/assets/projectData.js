@@ -8,13 +8,13 @@ import html from './html.svg'
 export const projectArray = [
     {
         title: 'MERN-Exercise-App',
-        description: 'A refresher after a long break learned and successfully created a MERN Fullstack Application with authentication',
+        description: 'Created a MERN Fullstack Application with authentication in a short amount of time',
         repo: 'https://github.com/andrewjkim745/MERN-Excercise-App',
         image: 'https://i.imgur.com/vwCxceR.gif'
     },
     {
         title: 'ToDoList',
-        description: 'A Full Stack ToDo CRUD application made during an interview process for PeerPal, works with full authentication',
+        description: 'A Full Stack ToDo CRUD application and works with full authentication',
         repo: 'https://github.com/andrewjkim745/ToDoList',
         image: 'https://media.giphy.com/media/VuLdmIZ5wi6MPRv6ur/giphy.gif',
         languages: [
@@ -34,7 +34,7 @@ export const projectArray = [
     },
     {
         title: 'WhichDayz',
-        description: 'Web App designed for WhichDayz. Was my first time implementing firebase authentication successfully',
+        description: 'Web App designed for WhichDayz and implemented firebase authentication successfully',
         repo: 'https://github.com/whichdayz/whichdayz-web',
         image: 'https://media.giphy.com/media/Nc58PcJRLPjagOlvoM/giphy.gif',
         languages: [
@@ -74,7 +74,7 @@ export const projectArray = [
     },
     {
         title: 'PhoneFixIt',
-        description: 'A phone business located in Hicksville/Glen Cove first attempt at using bulma',
+        description: 'A phone business located in Hicksville/Glen Cove uses modern css framework Bulma',
         repo: 'https://github.com/gdelv/phoneFixIt-Client',
         image: 'https://media.giphy.com/media/RISEzca0WfSb69m4se/giphy.gif',
         languages: [

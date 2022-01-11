@@ -13,7 +13,6 @@ export const CopyRight = () => {
         </div>
         <div style={{opacity: .6}} class='mt-3'>
             <a href="https://bulma.io">
-            <img src='https://bulma.io/images/made-with-bulma--white.png' width="300" height="300"/>
             </a>
         </div>
         </>

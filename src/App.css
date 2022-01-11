@@ -20,13 +20,12 @@ body{
     z-index: 9000000
 }
 .smallerSubtitle {
-    font-size: .9rem;
+    font-size: 1rem;
 }
 
 .dog {
     transform: rotateY(180deg);
     animation: dogRun 5s infinite;
-    /* animation-duration: 5s; */
 }
 
 .w100 {
