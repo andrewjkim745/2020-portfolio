@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { projectArray } from '../../assets/projectData'
 import CardItem from '../Shared/Card/CardItem'
 import Button from '../Shared/button'
-import Dropdown from '../Shared/dropdown'
+import  Dropdown  from '../Shared/dropdown'
 
 
 
@@ -10,27 +10,34 @@ export default function ProjectColumns() {
 
     const [projects, setProjects] = useState('')
     const [done, setDone] = useState(false)
+    const [ updated , setUpdated ] = useState(false)
 
 
-    sortByAlphabet = () => {
-        let sorted = projectArray.sort(function (a, b) {
-            return a.title - b.title
-        })
+    function sortByAlphabet () {
+        let sorted = projectArray.sort(function(a,b) {return (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0);} )
+        console.log('clicked')
         setProjects(sorted)
+        console.log(sorted)
+        setUpdated(!updated)
     }
 
-    sortByDateLatest = () => {
-        let sorted = projectArray.sort(function (a, b) {
-            return b.date - a.date
+    function sortByDateLatest () {
+        let sortedLatest = projectArray.sort(function (a, b) {
+            return new Date(b.date) - new Date(a.date)
         })
-        setProjects(sorted)
+        setProjects(sortedLatest)
+        console.log('sorted by latest' , sortedLatest)
+        setUpdated(!updated)
     }
 
-    sortByDateOldest = () => {
-        let sorted = projectArray.sort(function (a, b) {
-            return a.date - b.date
+    function sortByDateOldest() {
+        let sortedOldest = projectArray.sort(function (a, b) {
+            return new Date(a.date) - new Date(b.date)
         })
-        setProjects(sorted)
+        setProjects(sortedOldest)
+        console.log('sorted by oldest', sortedOldest)
+        setUpdated(!updated)
+        
     }
 
     const isInitialMount = useRef(true);
@@ -40,8 +47,9 @@ export default function ProjectColumns() {
             isInitialMount.current = false;
         } else {
             setDone(true)
+            console.log('useeffect', projects)
         }
-    }, [projects]);
+    }, [projects, updated]);
 
 
     function Projects() {
@@ -87,7 +95,7 @@ export default function ProjectColumns() {
 
 
     return (
-        <body>
+      
             <section class='section has-background-danger'>
                 <h1 class='mb-2 mt-3 title has-text-centered '>Projects</h1>
                 <Dropdown
@@ -97,6 +105,6 @@ export default function ProjectColumns() {
                 />
                 {Projects()}
             </section>
-        </body>
+        
     )
 }

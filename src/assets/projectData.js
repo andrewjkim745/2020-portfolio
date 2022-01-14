@@ -126,7 +126,7 @@ export const projectArray = [
         description: 'A Recipe app aimed to be quick and efficient for users,',
         repo: 'https://github.com/andrewjkim745/Community',
         image: 'https://media.giphy.com/media/J2TtO1RVadTTSvjALK/giphy.gif',
-        date: 'Sun Dec 20 2020 14:43:11',
+        date: 'Sun Dec 20 2019 14:43:11',
         languages: [
             {
                 language: Js
