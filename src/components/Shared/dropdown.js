@@ -5,7 +5,7 @@ import React from 'react'
 
 
 
-export const Dropdown = ({sortA, sortE, sortL}) => {
+export const Dropdown = ({sortA, sortO, sortL}) => {
     return (
         <div class="dropdown is-hoverable">
             <div class="dropdown-trigger">
@@ -21,8 +21,8 @@ export const Dropdown = ({sortA, sortE, sortL}) => {
                     <div onClick={sortA}class="dropdown-item">
                         <p>Alphabetically</p>
                     </div>
-                    <div onClick={sortE}class="dropdown-item">
-                        <p>By Earliest</p>
+                    <div onClick={sortO}class="dropdown-item">
+                        <p>By Oldest</p>
                     </div>
                     <div onClick={sortL}class="dropdown-item">
                         <p>By Latest</p>
