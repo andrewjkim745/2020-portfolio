@@ -61,11 +61,12 @@ export default function ProjectColumns() {
                         return (
                             <>
                                 <CardItem
+                                    title={project.title}
                                     image={project.image}
                                     description={project.description}
                                     color='dark'
                                     repo={project.repo}
-                                    title='View Project'
+                                    view='View Project'
                                 >
                                 </CardItem>
                             </>
@@ -77,11 +78,12 @@ export default function ProjectColumns() {
                             return (
                                 <>
                                     <CardItem
+                                        title={project.title}
                                         image={project.image}
                                         description={project.description}
                                         color='dark'
                                         repo={project.repo}
-                                        title='View Project'
+                                        view='View Project'
                                     >
                                     </CardItem>
                                 </>
@@ -97,7 +99,7 @@ export default function ProjectColumns() {
     return (
       
             <section class='section has-background-danger'>
-                <h1 class='mb-2 mt-3 title has-text-centered '>Projects</h1>
+                <h1 class='mb-2 mt-3 title has-text-centered has-text-light'>Projects</h1>
                 <Dropdown
                     sortA={sortByAlphabet}
                     sortL={sortByDateLatest}

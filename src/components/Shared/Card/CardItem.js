@@ -26,6 +26,7 @@ export default class CardItem extends React.Component {
             {props => (
                 <div class='springContainer' style={props}>
                     <div class='hoverCard'>
+                    <h2 style={{borderBottom: '1px solid white'}} class='smallerSubtitle has-text-white has-text-weight-bold my-2'>{this.props.title}</h2>
                     <h2 class='smallerSubtitle has-text-white has-text-weight-bold mx-1'>{this.props.description}</h2>
                     <div class='is-flex is-flex-direction-column'>
                         <div class='is-flex mb-4'>
@@ -33,7 +34,7 @@ export default class CardItem extends React.Component {
                         </div>
                         <Button
                         color={this.props.color}
-                        title={this.props.title}
+                        title={this.props.view}
                         repo={this.props.repo}
                         />
 

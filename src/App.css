@@ -10,6 +10,10 @@ body{
 .p10 { 
     padding: 3rem
 }
+
+.m1 {
+    margin-left: 1rem;
+}
 .p1 {
     padding: 1rem;
 }
@@ -159,6 +163,9 @@ body{
     .p1 {
         padding: 10rem;
     }
+    .m1 {
+        margin-left: 10rem;
+    }
     h1 {
         font-size: 3rem !important;
     }
@@ -176,6 +183,9 @@ body{
 
     .p6 {
         padding: 1rem;
+    }
+    .m1 {
+        margin-left: 15rem;
     }
     .p1 {
         padding: 15rem;
@@ -200,6 +210,10 @@ body{
     }
     .p1 {
         padding: 50rem;
+    }
+
+    .m1 {
+        margin-left: 50rem;
     }
     h1 {
         font-size: 3rem !important;
