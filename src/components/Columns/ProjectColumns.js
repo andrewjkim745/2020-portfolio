@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { projectArray } from '../../assets/projectData'
 import CardItem from '../Shared/Card/CardItem'
-import Button from '../Shared/button'
+import Searchbar from '../Shared/searchbar'
 import  Dropdown  from '../Shared/dropdown'
 
 
@@ -105,6 +105,7 @@ export default function ProjectColumns() {
                     sortL={sortByDateLatest}
                     sortO={sortByDateOldest}
                 />
+                <Searchbar/>
                 {Projects()}
             </section>
         

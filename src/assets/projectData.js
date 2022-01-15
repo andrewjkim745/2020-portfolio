@@ -1,9 +1,4 @@
-import Js from './js.svg'
-import css from './css.svg'
-import react from './react.svg'
-import sass from './sass.svg'
-import rails from './rails.svg'
-import html from './html.svg'
+
 
 export const projectArray = [
     {
@@ -12,7 +7,7 @@ export const projectArray = [
         repo: 'https://github.com/andrewjkim745/MERN-Excercise-App',
         image: 'https://i.imgur.com/vwCxceR.gif',
         date: 'Wed Dec 22 2021 15:39:36',
-        languages: [ 'mongodb','express', 'react', 'css','html','js']
+        tech: [ 'mongodb','express', 'react', 'css','html','js']
     },
     {
         title: 'ToDoList',
@@ -20,7 +15,7 @@ export const projectArray = [
         repo: 'https://github.com/andrewjkim745/ToDoList',
         image: 'https://media.giphy.com/media/VuLdmIZ5wi6MPRv6ur/giphy.gif',
         date: 'Fri Dec 4 2020 12:30:31',
-        languages: [ 'js', 'react', 'css', 'express', 'html', 'postgresql'],
+        tech: [ 'js', 'react', 'css', 'express', 'html', 'postgresql'],
     },
     {
         title: 'WhichDayz',
@@ -28,20 +23,7 @@ export const projectArray = [
         repo: 'https://github.com/whichdayz/whichdayz-web',
         image: 'https://media.giphy.com/media/Nc58PcJRLPjagOlvoM/giphy.gif',
         date: 'Fri Sep 18 2020 13:15:17',
-        languages: [
-            {
-                language: Js
-            },
-            {
-                language: react 
-            },
-            {
-                language: sass
-            },
-            {
-                language: css 
-            }
-        ]
+        tech: ['js', 'html', 'css', 'react', 'firebase'],
     },
     {
         title: 'Caroline Portfolio',
@@ -49,20 +31,7 @@ export const projectArray = [
         repo: 'https://github.com/andrewjkim745/Caroline-Portfolio',
         image: 'https://media.giphy.com/media/Qyajkv8vynBHpHbTCF/giphy.gif',
         date: 'Tue Apr 21 2020 14:21:45',
-        languages: [
-            {
-                language: Js
-            },
-            {
-                language: react
-            },
-            {
-                language: sass
-            },
-            {
-                language: css
-            }
-        ]
+        tech: ['js', 'html', 'css', 'react', 'bulma'],
     },
     {
         title: 'PhoneFixIt',
@@ -70,20 +39,8 @@ export const projectArray = [
         repo: 'https://github.com/gdelv/phoneFixIt-Client',
         image: 'https://media.giphy.com/media/RISEzca0WfSb69m4se/giphy.gif',
         date: 'Sat Mar 7 2020 17:33:31',
-        languages: [
-            {
-                language: Js
-            },
-            {
-                language: react
-            },
-            {
-                language: sass
-            },
-            {
-                language: css
-            }
-        ]
+        tech: ['js', 'html', 'css', 'react', 'bulma']
+
     },
     {
         title: 'Raddit',
@@ -91,23 +48,7 @@ export const projectArray = [
         repo: 'https://github.com/andrewjkim745/Community',
         image: 'https://media.giphy.com/media/YrqMH8JJwrapudMZOS/giphy.gif',
         date: 'Fri Jan 17 2020 15:21:30',
-        languages: [
-            {
-                language: Js
-            },
-            {
-                language: react
-            },
-            {
-                language: sass
-            },
-            {
-                language: css
-            },
-            {
-                language: rails
-            }
-        ]
+        tech: ['js', 'react', 'css', 'html', 'postgresql', 'ruby on rails']
     },
     {
         title: 'OpenFridge',
@@ -115,23 +56,7 @@ export const projectArray = [
         repo: 'https://github.com/andrewjkim745/Community',
         image: 'https://media.giphy.com/media/J2TtO1RVadTTSvjALK/giphy.gif',
         date: 'Sun Dec 20 2019 14:43:11',
-        languages: [
-            {
-                language: Js
-            },
-            {
-                language: react
-            },
-            {
-                language: sass
-            },
-            {
-                language: css
-            },
-            {
-                language: rails
-            }
-        ]
+        tech: ['js', 'react', 'css', 'html', 'bootstrap']
     },
     {
         title: 'Nike Jordan Clone',
@@ -139,17 +64,7 @@ export const projectArray = [
         repo: 'https://github.com/gdelv/jordanFrontend',
         image: 'https://media.giphy.com/media/Jt5wIjBN8UGtpUtxbv/giphy.gif',
         date: 'Fri Feb 14 2020 11:13:31',
-        languages: [
-            {
-                language: Js
-            },
-            {
-                language: react 
-            },
-            {
-                language: css
-            }
-        ]
+        tech: ['js', 'html', 'react', 'css']
     },
     {
         title: 'Gameboxd',
@@ -157,23 +72,7 @@ export const projectArray = [
         repo: 'https://github.com/andrewjkim745/Gameboy-Box',
         image: 'https://media.giphy.com/media/j5z15zrcre25h4Vdyt/giphy.gif',
         date: 'Wed Mar 4 2020 10:45:33',
-        languages: [
-            {
-                language: Js
-            },
-            {
-                language: react 
-            },
-            {
-                language: css
-            },
-            {
-                language: sass
-            },
-            {
-                language: rails 
-            }
-        ]
+        tech: ['js', 'html', 'react', 'css', 'ruby on rails']
     },
     {
         title: 'Fusion Wireless Clone',
@@ -182,20 +81,7 @@ export const projectArray = [
         site: 'fusionwireless.netlify.com',
         image: 'https://media.giphy.com/media/ZFWUU9cRnPVhaiNW1d/giphy.gif',
         date: 'Tue Feb 11 2020, 15:43:11',
-        languages: [
-            {
-                language: Js
-            },
-            {
-                language: react 
-            },
-            {
-                language: css
-            },
-            {
-                language: sass
-            }
-        ]
+        tech: ['js', 'react', 'bulma', 'html', 'css']
     },
     {
         title: 'MyGameList',
@@ -203,23 +89,7 @@ export const projectArray = [
         repo: 'https://github.com/andrewjkim745/mygamelist_frontend',
         image: 'https://media.giphy.com/media/h4UAO9SBns34CFU2wb/giphy.gif',
         date: 'Mon Feb 3 2020 10:41:22',
-        languages: [
-            {
-                language: Js
-            },
-            {
-                language: react
-            },
-            {
-                language: css 
-            },
-            {
-                language: sass 
-            },
-            {
-                language: rails 
-            }
-        ]
+        tech: ['js', 'react', 'html', 'css', 'ruby on rails', 'postgresql']
     },
     {
         title: 'Movie Application',
@@ -227,20 +97,7 @@ export const projectArray = [
         repo: 'https://github.com/andrewjkim745/Movie-Application',
         image: 'https://media.giphy.com/media/KDami0r5MKZ6mAOEw0/giphy.gif',
         date: 'Mon Nov 18 2019 11:31:33',
-        languages: [
-            {
-                language: Js
-            },
-            {
-                language: react
-            },
-            {
-                language: css 
-            },
-            {
-                language: sass
-            }
-        ]
+        tech: ['js', 'react', 'css', 'mockapi']
     }
     
 ]
