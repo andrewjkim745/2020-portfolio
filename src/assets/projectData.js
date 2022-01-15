@@ -12,6 +12,7 @@ export const projectArray = [
         repo: 'https://github.com/andrewjkim745/MERN-Excercise-App',
         image: 'https://i.imgur.com/vwCxceR.gif',
         date: 'Wed Dec 22 2021 15:39:36',
+        languages: [ 'mongodb','express', 'react', 'css','html','js']
     },
     {
         title: 'ToDoList',
@@ -19,20 +20,7 @@ export const projectArray = [
         repo: 'https://github.com/andrewjkim745/ToDoList',
         image: 'https://media.giphy.com/media/VuLdmIZ5wi6MPRv6ur/giphy.gif',
         date: 'Fri Dec 4 2020 12:30:31',
-        languages: [
-            {
-                language: Js
-            },
-            {
-                language: react 
-            },
-            {
-                language: css
-            },
-            {
-                language: sass
-            },
-        ]
+        languages: [ 'js', 'react', 'css', 'express', 'html', 'postgresql'],
     },
     {
         title: 'WhichDayz',
