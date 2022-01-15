@@ -100,12 +100,14 @@ export default function ProjectColumns() {
       
             <section class='section has-background-danger'>
                 <h1 class='mb-2 mt-3 title has-text-centered has-text-light'>Projects</h1>
+                <div class='is-flex is-flex-direction-column'>
+                <Searchbar/>
                 <Dropdown
                     sortA={sortByAlphabet}
                     sortL={sortByDateLatest}
                     sortO={sortByDateOldest}
                 />
-                <Searchbar/>
+                </div>
                 {Projects()}
             </section>
         

@@ -8,7 +8,7 @@ export default function Searchbar () {
 
     return (
         <>
-        <input class="input" type="text" placeholder="Search for Projects by language/framework ex. react"></input>
+        <input class="input is-small is-rounded m1" type="text" placeholder="Search for Projects by language/framework ex. react"></input>
         </>
 
     )
