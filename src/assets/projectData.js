@@ -101,3 +101,8 @@ export const projectArray = [
     }
     
 ]
+
+export const techArray = [
+
+    'js', 'react', 'css', 'mockapi', 'html', 'ruby on rails', 'postgresql', 'bulma', 'bootstrap', 'firebase','express','mongodb'
+]
