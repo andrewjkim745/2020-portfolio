@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useHistory } from "react-router-dom";
 import { sdData } from '../../assets/sdData'
 import Icon from '@material-ui/core/Icon'
-import { Redirect } from 'react-router-dom'
 
 export default function SlideDrawer(props) {
 

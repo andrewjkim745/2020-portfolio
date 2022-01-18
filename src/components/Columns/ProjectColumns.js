@@ -24,9 +24,8 @@ export default function ProjectColumns() {
             setSuggestions(suggestions)
         }
         setText(value)
-
     }
-
+    
     function suggestionsSelected(tech) {
         setText(tech)
         setSuggestions([])
