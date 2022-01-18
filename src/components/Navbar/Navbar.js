@@ -33,13 +33,13 @@ export default function Navbar () {
 
     return (
 
-        <div style={{ }}class='navbar navTransparent' role="navigation" aria-label="main navigation">
+        <div style={{position:'fixed'}}class='navbar navTransparent' role="navigation" aria-label="main navigation">
             <div class='navbar-brand'>
                 <NavLink exact to='/'>
                 </NavLink>
                 <div  class='navbar-item'>
                 </div>
-                <a onClick={() => setModal(true)} role="button" style={{display:'unset'}}class="navbar-burger has-text-danger" aria-label="menu" aria-expanded="false">
+                <a onClick={() => setModal(true)} role="button" style={{display:'unset'}}class="navbar-burger has-text-primary" aria-label="menu" aria-expanded="false">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>

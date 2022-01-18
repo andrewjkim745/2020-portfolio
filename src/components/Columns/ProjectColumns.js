@@ -3,6 +3,7 @@ import { projectArray, techArray } from '../../assets/projectData'
 import CardItem from '../Shared/Card/CardItem'
 import Searchbar from '../Shared/searchbar'
 import  Dropdown  from '../Shared/dropdown'
+import '../Shared/styles.css'
 
 
 
@@ -144,14 +145,14 @@ export default function ProjectColumns() {
 
     return (
       
-            <section class='section has-background-danger'>
+            <section onClick={()=> setSuggestions([])}class='section has-background-danger'>
                 <h1 class='mb-2 mt-3 title has-text-centered has-text-light'>Projects</h1>
-                <div class='is-flex is-flex-direction-column'>
+                <div class='columns is-gapless is-multiline p1'>
                 <Searchbar
                 onChange={onTextChange}
-                text={text}
-                />
+                text={text}>
                 {renderSuggestions()}
+                </Searchbar>
                 <Dropdown
                     sortA={sortByAlphabet}
                     sortL={sortByDateLatest}

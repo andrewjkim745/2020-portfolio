@@ -9,7 +9,7 @@ export default function Dropdown ({sortA, sortO, sortL}) {
 
     const [hovered, setHovered ] = useState()
     return (
-        <div class="dropdown is-hoverable m1">
+        <div class="dropdown is-hoverable">
             <div class="dropdown-trigger">
                 <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                     <span>Sort</span>

@@ -1,14 +1,14 @@
 import React from 'react'
+import './styles.css'
 
 
-
-
-export default function Searchbar ({ onChange, text}) {
+export default function Searchbar ({ onChange, text, children}) {
 
 
     return (
-        <div class='is-flex is-flex-direction-column'>
-        <input onChange={onChange} class="input is-small is-rounded m1" type="text" value={text} placeholder="Search for Projects by language/framework ex. react"></input>
+        <div class='TypeAheadDropDown'>
+        <input onChange={onChange} type="text" value={text} placeholder="Search for Projects by language/framework ex. react"/>
+        {children}
         </div>
 
     )
