@@ -16,36 +16,21 @@ export default function ProjectColumns() {
     const [ suggestions, setSuggestions ] = useState([])
 
     function onTextChange(e) {
-        let suggestions = []
         const value = e.target.value
         console.log(value)
         if (value.length > 0) {
             const regex = new RegExp(`^${value}`, `i`);
             let suggestions = techArray.sort().filter(v => regex.test(v))
             setSuggestions(suggestions)
-            // let suggestions = projectArray.sort().filter(v => v.tech.includes(value))
-            // projectArray.forEach(project => {
-            //    let newArray = []
-            //    const newerArray = newArray.push(project.tech)
-            //     console.log('new array', newerArray)
-            // console.log(project.tech)
-                // let suggestions = project.tech.sort().filter(v => regex.test(v))
-                // console.log('suggestions from map', suggestions)
-                // setSuggestions(suggestions)
-                // console.log('suggestions',suggestions)
-            // })
         }
-        
-        console.log('suggestions',suggestions)
         setText(value)
-        console.log('text state', value)
+
     }
 
     function suggestionsSelected(tech) {
         setText(tech)
         setSuggestions([])
         let sorted = projectArray.sort().filter(p => p.tech.includes(tech))
-        console.log('srted',  sorted)
         setProjects(sorted)
         setUpdated(!updated)
     }
@@ -64,7 +49,6 @@ export default function ProjectColumns() {
         let sorted = projectArray.sort(function(a,b) {return (a.title > b.title) ? 1 : ((b.title > a.title) ? -1 : 0);} )
         console.log('clicked')
         setProjects(sorted)
-        console.log(sorted)
         setUpdated(!updated)
     }
 
@@ -73,7 +57,6 @@ export default function ProjectColumns() {
             return new Date(b.date) - new Date(a.date)
         })
         setProjects(sortedLatest)
-        console.log('sorted by latest' , sortedLatest)
         setUpdated(!updated)
     }
 
@@ -82,9 +65,7 @@ export default function ProjectColumns() {
             return new Date(a.date) - new Date(b.date)
         })
         setProjects(sortedOldest)
-        console.log('sorted by oldest', sortedOldest)
         setUpdated(!updated)
-        
     }
 
     const isInitialMount = useRef(true);
@@ -94,10 +75,8 @@ export default function ProjectColumns() {
             isInitialMount.current = false;
         } else {
             setDone(true)
-            console.log('useeffect', projects)
         }
     }, [projects, updated]);
-
 
     function Projects() {
         return (
