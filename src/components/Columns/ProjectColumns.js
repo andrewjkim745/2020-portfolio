@@ -123,8 +123,8 @@ export default function ProjectColumns() {
 
     return (
       
-            <section onClick={()=> setSuggestions([])}class='section has-background-danger'>
-                <h1 class='mb-2 mt-3 title has-text-centered has-text-light'>Projects</h1>
+            <section id='Projects' onClick={()=> setSuggestions([])}class='section has-background-danger'>
+                <h1 class='mb-2 mt-3 title has-text-centered has-text-light has-text-weight-light'>Projects</h1>
                 <div class='columns is-gapless is-multiline p1'>
                 <Searchbar
                 onChange={onTextChange}

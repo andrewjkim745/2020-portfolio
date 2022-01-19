@@ -9,7 +9,7 @@ export default function LanguageColumns() {
     
     return (
         <div style={{ backgroundColor:'white' }} class='is-flex-direction-column is-justify-content-center p10'>
-            <h1 class='title is-size-6-mobile has-text-centered'>Languages/Frameworks Learned</h1>
+            <h1 class='title is-size-6-mobile has-text-centered has-text-weight-light'>Languages/Frameworks Learned</h1>
         <div class='columns is-multiline my-6'>
             {languageArray.map(language => {
             return (
@@ -21,7 +21,7 @@ export default function LanguageColumns() {
                         </figure>
                     </div>
                     <div class='content is-flex is-justify-content-center'>
-                        <h1>{language.name}</h1>
+                        <h1 class='has-text-weight-light'>{language.name}</h1>
                     </div>
                 </div>
             </Column>

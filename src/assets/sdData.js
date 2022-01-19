@@ -16,5 +16,10 @@ export const sdData = [
         image: 'contactless',
         name: 'Contact',
         path: '/contact'
+    },
+    {
+        image: 'folder',
+        name: 'Projects',
+        path: '/'
     }
 ]

@@ -83,7 +83,7 @@ body{
     position: fixed;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 50%;
     z-index: 200;
     box-shadow: 1px 0px 7px rgba(0,0,0,0.5); 
     transform: translateX(100%);
@@ -93,6 +93,9 @@ body{
     transform: translateX(0);
  }
 
+ .flexImportant {
+     display:flex !important;
+ }
  .card:hover {
      transform: scale(1.05);
      transition: 0.2s;
@@ -112,8 +115,13 @@ body{
 
   .fullW {
       width: 100%;
-      border-bottom: 1px solid lightslategrey;
+      border-bottom: .5px solid lightslategrey;
       padding: 10px;
+  }
+
+  .fullW:hover {
+      opacity: .7;
+      background-color: lightgrey;
   }
 
   .shiftTop { 

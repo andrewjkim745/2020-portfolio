@@ -23,9 +23,9 @@ export default function SlideDrawer(props) {
              <>
              {sdData.map(item => {
                 return (
-                <div onClick={()=> history.push(item.path)} class='fullW is-flex is-justify-content-space-evenly is-align-items-center'>
-                   <Icon>{item.image}</Icon>
-                   <a href={item.name === 'Contact' ? '': `#${item.name}`} onClick={props.onClick} class='is-size-3-desktop is-size-6-mobile has-text-black'>{item.name}</a>
+                <div onClick={()=> history.push(item.path)} style={{cursor: 'pointer'}} class='fullW is-flex is-justify-content-space-evenly is-align-items-center'>
+                   <Icon fontSize='Medium'>{item.image}</Icon>
+                   <a href={item.name === 'Contact' ? '': `#${item.name}`} onClick={props.onClick} class='is-size-3-desktop is-size-6-mobile has-text-black has-text-weight-light'>{item.name}</a>
                 </div>
                 )
              })}
