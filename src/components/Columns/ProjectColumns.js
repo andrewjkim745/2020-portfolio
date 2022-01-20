@@ -20,7 +20,19 @@ export default function ProjectColumns() {
         console.log(value)
         if (value.length > 0) {
             const regex = new RegExp(`^${value}`, `i`);
-            let suggestions = techArray.sort().filter(v => regex.test(v))
+            let i = 0
+            let j = 0
+            let suggestions = []
+
+            while (i < projectArray.length - 1)  {
+                    let match = projectArray[i].tech.filter(v=> regex.test(v))
+                    console.log('matches', match)
+                    match.forEach(tech => {
+                        (suggestions.includes(tech) ? console.log('already included') : suggestions.push(tech))
+                    })
+                    i++
+            }
+            console.log('suggestions', suggestions)
             setSuggestions(suggestions)
         }
         setText(value)
