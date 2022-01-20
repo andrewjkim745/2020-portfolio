@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { projectArray, techArray } from '../../assets/projectData'
+import { projectArray } from '../../assets/projectData'
 import CardItem from '../Shared/Card/CardItem'
 import Searchbar from '../Shared/searchbar'
 import  Dropdown  from '../Shared/dropdown'
