@@ -21,7 +21,6 @@ export default function ProjectColumns() {
         if (value.length > 0) {
             const regex = new RegExp(`^${value}`, `i`);
             let i = 0
-            let j = 0
             let suggestions = []
 
             while (i < projectArray.length - 1)  {
