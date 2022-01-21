@@ -10,7 +10,6 @@ export const Modal = ({ className, onClick, sideDrawerClass }) => {
     <>
     <div class={className}>
         <div onClick={onClick} class='modal-background'>
-            {/* <div class='modal-content'> */}
                 <div class='is-flex is-flex-direction-column is-justify-content-center is-align-items-center'>
                     <div class={sideDrawerClass}>
                     <Title
@@ -34,7 +33,6 @@ export const Modal = ({ className, onClick, sideDrawerClass }) => {
             </div>
         </div>
         <button onClick={onClick} class="modal-close is-large" aria-label="close"></button>
-    {/* </div> */}
     </>
     )
 }
