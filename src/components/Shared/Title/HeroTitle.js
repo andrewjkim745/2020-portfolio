@@ -11,8 +11,8 @@ export const HeroTitle = ({ title, color, fontFamily }) => {
         <div className='center'>
         <section class="hero">
             <div class='hero-body'>
-                <div class='container has-text-centered'>
-                    <h1 class='title is-spaced has-text-weight-light is-size-5-mobile' style={{ fontFamily: `${fontFamily}`, color: `${color}` }} >{title}</h1>
+                <div data-aos='fade-in' data-aos-once='true' data-aos-delay='500' class='container has-text-centered'>
+                    <h1  class='title is-spaced has-text-weight-light is-size-5-mobile' style={{ fontFamily: `${fontFamily}`, color: `${color}` }} >{title}</h1>
                     <TextLoop
                     mask={true}
                     interval={1500}

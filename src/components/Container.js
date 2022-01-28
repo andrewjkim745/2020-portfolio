@@ -8,17 +8,23 @@ import  ProjectColumns from './Columns/ProjectColumns'
 import { About } from './About'
 import { Interested } from '../components/Shared/Interested'
 import { Footer } from './Footer'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 
 export default class Container extends React.Component {
 
     static contextType = ThemeContext
-
+    componentDidMount() {
+        AOS.init({ duration: 2000 })
+    }
     render() {
         const { isLightTheme, light, dark } = this.context;
         const theme = isLightTheme ? light : dark
 
+
+
+        
         return (
             <>
             <Navbar/>

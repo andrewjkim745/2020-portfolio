@@ -6,7 +6,7 @@ import Avatar from '../assets/andrew.svg'
 
 export const About = () => {
     return (
-        <section id='About' class='is-large is-primary has-text-centered is-long has-background-danger p-5 py-6'>
+        <section data-aos='fade-in' data-aos-once='true' id='About' class='is-large is-primary has-text-centered is-long has-background-danger p-5 py-6'>
             <div class='container'>
                 <div class='columns is-centered'>
                     <Column
