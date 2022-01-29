@@ -92,7 +92,7 @@ export default function ProjectColumns() {
         return (
             <>
                 {done ? 
-                <div class='columns is-gapless is-multiline p1'>
+                <div data-aos='fade-up' data-aos-once='true' class='columns is-gapless is-multiline p1'>
                     {projects.map(project => {
                         return (
                             <>
@@ -109,7 +109,7 @@ export default function ProjectColumns() {
                         )
                     })}
                 </div> :
-                    <div class='columns is-gapless is-multiline p1'>
+                    <div data-aos='fade-up' data-aos-once='true' class='columns is-gapless is-multiline p1'>
                         {projectArray.map(project => {
                             return (
                                 <>
@@ -134,9 +134,9 @@ export default function ProjectColumns() {
 
     return (
       
-            <section data-aos='fade-up' data-aos-once='true' id='Projects' onClick={()=> setSuggestions([])}class='section has-background-danger'>
+            <section data-aos='fade-in' data-aos-once='true' id='Projects' onClick={()=> setSuggestions([])}class='section has-background-danger'>
                 <h1 class='mb-2 mt-3 title has-text-centered has-text-light has-text-weight-light'>Projects</h1>
-                <div class='columns is-gapless is-multiline p1'>
+                <div data-aos='fade-down' data-aos-once='true' class='columns is-gapless is-multiline p1'>
                 <Searchbar
                 onChange={onTextChange}
                 text={text}>
