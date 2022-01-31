@@ -32,7 +32,7 @@ export default class Container extends React.Component {
                 <HeroTitle
                     title='Andrew J Kim'
                     color='white'
-                    fontFamily= 'Roboto Slab'
+                    fontFamily={'Bebas Neue'}
                 />
                 <About/> 
                 <LanguageColumns/>

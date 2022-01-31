@@ -19,7 +19,6 @@ export const Backdrop = ({ color }) => {
             position: 'relative',
             zIndex: -999
          }}>
-             {/* <Navbar/> */}
         </div>
     )
 }
