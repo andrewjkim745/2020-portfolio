@@ -9,7 +9,7 @@ export default function LanguageColumns() {
     
     return (
         <div data-aos='slide-right' data-aos-once='true' style={{ backgroundColor:'white' }} class='is-flex-direction-column is-justify-content-center p10'>
-            <h1 class='title is-size-6-mobile has-text-centered has-text-weight-light'>Languages/Frameworks Learned</h1>
+            <h1 class='title is-size-4-tablet is-size-5-mobile has-text-centered has-text-weight-light'>Languages/Frameworks Learned</h1>
         <div class='columns is-multiline my-6'>
             {languageArray.map(language => {
             return (

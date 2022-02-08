@@ -17,17 +17,17 @@ export default function Dropdown ({sortA, sortO, sortL}) {
             </div>
             <div class="dropdown-menu" id="dropdown-menu" role="menu">
                 <div class="dropdown-content">
-                    <div onClick={sortA} onMouseEnter={()=> setHovered(true)} onMouseLeave={()=>setHovered(false)} class={hovered ? 'dropdown-item is-active' : 'dropdown-item'}>
+                    <div onClick={sortA} class= 'dropdown-item'>
                         <a>Alphabetically</a>
                     </div>
-                    <hr class="dropdown-divider"/>
+                    <hr class="dropdown-divider" />
 
-                    <div onClick={sortO}onMouseEnter={()=> setHovered(true)} onMouseLeave={()=>setHovered(false)} class={hovered ? 'dropdown-item is-active' : 'dropdown-item'}>
+                    <div onClick={sortO} class= 'dropdown-item'>
                         <a>By Oldest</a>
                     </div>
                     <hr class="dropdown-divider"/>
 
-                    <div onClick={sortL}onMouseEnter={()=> setHovered(true)} onMouseLeave={()=>setHovered(false)} class={hovered ? 'dropdown-item is-active' : 'dropdown-item'}>
+                    <div onClick={sortL} class= 'dropdown-item'>
                         <a>By Latest</a>
                     </div>
                 </div>

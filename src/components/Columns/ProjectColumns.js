@@ -92,7 +92,7 @@ export default function ProjectColumns() {
         return (
             <>
                 {done ? 
-                <div data-aos='fade-up' data-aos-once='true' class='columns is-gapless is-multiline p1'>
+                <div style={{ position: 'relative', zIndex: '-8888'}} data-aos='fade-up' data-aos-once='true' class='columns is-gapless is-multiline p1'>
                     {projects.map(project => {
                         return (
                             <>
@@ -109,7 +109,7 @@ export default function ProjectColumns() {
                         )
                     })}
                 </div> :
-                    <div data-aos='fade-up' data-aos-once='true' class='columns is-gapless is-multiline p1'>
+                    <div style={{ position: 'relative', zIndex: '-8888'}} data-aos='fade-up' data-aos-once='true' class='columns is-gapless is-multiline p1'>
                         {projectArray.map(project => {
                             return (
                                 <>

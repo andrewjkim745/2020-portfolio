@@ -2,6 +2,14 @@
 
 export const projectArray = [
     {
+        title: 'Farrell Therapy',
+        description: 'Fully Responsive, modern UI/UX, animations, professionally made portfolio',
+        repo: 'https://github.com/andrewjkim745/Farrell-Therapy',
+        image: 'https://imgur.com/Coxr4QU.gif',
+        date: 'Tue Feb 8 2022 14:43:11',
+        tech: ['js', 'react', 'css', 'html', 'bootstrap', 'bulma']
+    },
+    {
         title: 'MERN-Exercise-App',
         description: 'Created a MERN Fullstack Application with authentication in a short amount of time',
         repo: 'https://github.com/andrewjkim745/MERN-Excercise-App',
@@ -51,14 +59,6 @@ export const projectArray = [
         tech: ['js', 'react', 'css', 'html', 'postgresql', 'ruby on rails']
     },
     {
-        title: 'OpenFridge',
-        description: 'A Recipe app aimed to be quick and efficient for users,',
-        repo: 'https://github.com/andrewjkim745/Community',
-        image: 'https://media.giphy.com/media/J2TtO1RVadTTSvjALK/giphy.gif',
-        date: 'Sun Dec 20 2019 14:43:11',
-        tech: ['js', 'react', 'css', 'html', 'bootstrap']
-    },
-    {
         title: 'Nike Jordan Clone',
         description: 'A clone of the Nike Jordan Website built from scratch, built to improve my skills as a competent developer',
         repo: 'https://github.com/gdelv/jordanFrontend',
@@ -91,6 +91,7 @@ export const projectArray = [
         date: 'Mon Feb 3 2020 10:41:22',
         tech: ['js', 'react', 'html', 'css', 'ruby on rails', 'postgresql']
     },
+
     {
         title: 'Movie Application',
         description: 'My second project,A movie application using a MockApi and a third party API (themoviedb.org)',
@@ -98,6 +99,7 @@ export const projectArray = [
         image: 'https://media.giphy.com/media/KDami0r5MKZ6mAOEw0/giphy.gif',
         date: 'Mon Nov 18 2019 11:31:33',
         tech: ['js', 'react', 'css', 'mockapi']
-    }
+    },
+    
     
 ]
