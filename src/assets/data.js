@@ -10,7 +10,10 @@ import git from './git.svg'
 import mongodb from './mongodb.svg'
 import postgresql from './postgresql.svg'
 import firebase from './firebase.svg'
-
+import mysql from './mysql.svg'
+import python from './python.svg'
+import redux from './redux.svg'
+import bulma from './bulma.svg'
 
 
 
@@ -22,12 +25,24 @@ export const languageArray = [
         name: 'React'
     },
     {
+        image: redux,
+        name: 'Redux'
+    },
+    {
+        image: bulma,
+        name: 'Bulma'
+    },
+    {
         image: mongodb,
         name: 'MongoDB'
     },
     {
         image: expressjs,
         name: 'ExpressJS'
+    },
+    {
+        image: mysql,
+        name: 'MySQL'
     },
     {
         image: postgresql,
@@ -48,6 +63,10 @@ export const languageArray = [
     {
         image: ruby,
         name: 'Ruby'
+    },
+    {
+        image: python,
+        name: 'Python'
     },
     {
         image: sass,
