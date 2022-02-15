@@ -2,6 +2,14 @@
 
 export const projectArray = [
     {
+        title: 'Twitch Store',
+        description: 'Fully functional ecommerce app which pulls from Twitch API, made with Redux',
+        repo: 'https://github.com/andrewjkim745/Twitch-Store',
+        image: 'https://imgur.com/sERwfOQ.gif',
+        date: 'Tue Feb 15 2022 03:41:22',
+        tech: ['js', 'react', 'html', 'css', 'redux', 'bootstrap', 'bulma']
+    },
+    {
         title: 'Farrell Therapy',
         description: 'Fully Responsive, modern UI/UX, animations, professionally made portfolio',
         repo: 'https://github.com/andrewjkim745/Farrell-Therapy',
@@ -83,14 +91,7 @@ export const projectArray = [
         date: 'Tue Feb 11 2020, 15:43:11',
         tech: ['js', 'react', 'bulma', 'html', 'css']
     },
-    {
-        title: 'MyGameList',
-        description: 'My second Full Stack web app that implements fully functional CRUD and user Authentication',
-        repo: 'https://github.com/andrewjkim745/mygamelist_frontend',
-        image: 'https://media.giphy.com/media/h4UAO9SBns34CFU2wb/giphy.gif',
-        date: 'Mon Feb 3 2020 10:41:22',
-        tech: ['js', 'react', 'html', 'css', 'ruby on rails', 'postgresql']
-    },
+
 
     {
         title: 'Movie Application',
