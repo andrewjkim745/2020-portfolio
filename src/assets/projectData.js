@@ -5,7 +5,7 @@ export const projectArray = [
         title: 'Twitch Store',
         description: 'Fully functional ecommerce app which pulls from Twitch API, made with Redux',
         repo: 'https://github.com/andrewjkim745/Twitch-Store',
-        image: 'https://imgur.com/sERwfOQ.gif',
+        image: 'https://i.imgur.com/wUMXr0B.gif',
         date: 'Tue Feb 15 2022 03:41:22',
         tech: ['js', 'react', 'html', 'css', 'redux', 'bootstrap', 'bulma']
     },

@@ -17,7 +17,7 @@ export default function ProjectColumns() {
 
     function onTextChange(e) {
         const value = e.target.value
-        console.log(value)
+        
         if (value.length > 0) {
             const regex = new RegExp(`^${value}`, `i`);
             let i = 0
