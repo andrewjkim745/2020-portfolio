@@ -25,7 +25,7 @@ export default function ProjectColumns() {
 
             while (i < projectArray.length - 1)  {
                     let match = projectArray[i].tech.filter(v=> regex.test(v))
-                    console.log('matches', match)
+                    
                     match.forEach(tech => {
                         (suggestions.includes(tech) ? console.log('already included') : suggestions.push(tech))
                     })
