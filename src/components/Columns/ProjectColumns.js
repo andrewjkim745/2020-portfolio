@@ -31,7 +31,7 @@ export default function ProjectColumns() {
                     })
                     i++
             }
-            console.log('suggestions', suggestions)
+            
             setSuggestions(suggestions)
         }
         setText(value)
